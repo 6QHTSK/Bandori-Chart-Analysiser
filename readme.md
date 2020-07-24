@@ -4,10 +4,9 @@
 
 执行命令即可计算
 
-    ```python
     import chartanalysiser
     chartanalysiser.calcdiff(id,diffnum,chart) # id bestdori谱面id，diffnum 0-4分别为easy-special，使用chart项可计算自定义谱面，此时应把id置为-1
-    ```
+
 ## 思想
 
 SHITCODE警告
@@ -16,7 +15,7 @@ SHITCODE警告
 
 有大量的坑没填
 
-###致谢###
+### 致谢
 
 感谢灵喵提供机器人查难度支持
 
