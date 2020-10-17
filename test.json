@@ -1,0 +1,9859 @@
+{
+  "result": true,
+  "post": {
+    "categoryName": "SELF_POST",
+    "categoryId": "chart",
+    "title": "God Save The Girls",
+    "song": {
+      "type": "custom",
+      "audio": "https://bestdori.com/api/upload/chart_audio/kh35eq8vy7uqir47q3pf",
+      "cover": "https://img.moegirl.org/common/4/41/Magic_of_Stella_Anime_KV.png"
+    },
+    "artists": "Shimoji Shino（下地 紫野）",
+    "diff": 3,
+    "level": 23,
+    "notes": [
+      {
+        "bpm": 170,
+        "cmd": "BPM",
+        "beat": 0,
+        "type": "System"
+      },
+      {
+        "beat": 2,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 2.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 3,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 3.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 4,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 4.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 6.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 6.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 8.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 8.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 9.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 10,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 10.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 11,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 11.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 12,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 12.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 14.5,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 14.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 16,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 16,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 16.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 17.25,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 18,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 18.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 20.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note",
+        "skill": true
+      },
+      {
+        "beat": 20.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 21,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 21,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 21.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 21.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 22,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 22,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 23,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 23,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 23.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 23.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 24,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 24,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 25,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 25,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 25.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 25.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 26,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 26,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 27,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "beat": 28,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 28.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 29.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 30.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 31.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 32.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 32.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 34,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 34.5,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 34.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 35,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 35.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 36,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 36,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 36.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "beat": 36.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 37,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 37.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 38,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 39,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 39.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 40,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 40.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 41,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 41.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 42,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 42,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 43,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 43.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 44,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "beat": 44,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 44.25,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 44.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 48,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 48,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 49.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 50,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 50.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 51,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 52,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 52.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 53,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 53.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 54,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 55,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 56,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 57,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 57,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 57.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 58,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 58,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 59.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 60,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "skill": true,
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 60.25,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 60.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 64,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 64,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 65.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 65.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 66,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 66,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 67,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 67,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 68.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 69,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 69.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 70,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 70,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 71,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 72,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 73,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 74,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 76,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 76,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 77.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 78.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 78.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 79.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 80,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 80,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 81,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 81,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 82,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 82.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 83,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 83.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "beat": 84.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 84.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 85.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 86.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 86.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 87.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 88,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 88,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 89,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 89.75,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 90.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 90.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 91,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 91.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 92.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 92.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 93.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 93.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 94.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 94.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 96,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 96.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 96.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 97.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 98,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 99,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 99,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 100,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 100.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 102,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 102,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 102.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 104,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 104,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 104.25,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 104.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 105,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 105.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 106,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 106,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 108,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 108,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 108.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 108.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 109.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note",
+        "skill": true
+      },
+      {
+        "beat": 110.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 110.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 111.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 112,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 112,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 113,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 114,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 114,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 114.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 115,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 115.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 116.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 116.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 117.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 118.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 119.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 120,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 120,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 121,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 121,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 122,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 122.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 123,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 123.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 124.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 124.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 125.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 126.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 127,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 128,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 128.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 128.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 129.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 130,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 131,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 131,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 132,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 132.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 134.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 135,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 135.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 136,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 138,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 139,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 139.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 140,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 140.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 141.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 142,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 143.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 144.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 147.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 148.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 149.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 150,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 151.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 152.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 153.25,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 154,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 154.5,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 155.5,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 156.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 156.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note",
+        "skill": true
+      },
+      {
+        "beat": 157,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 157.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 157.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 158,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 158.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 159,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 159.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 160,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 160.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 161,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "beat": 161.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 161.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 162.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 162.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 163.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 163.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 164.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 164.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 165.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 166.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 166.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 167.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 168.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 168.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 169.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 170.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 170.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 171.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "pos": "B",
+        "beat": 172.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 172.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 176,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 176,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 177,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 177,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 177.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 177.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 178,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 178.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 179,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 179.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 180,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 180.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 182,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 182,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 184.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 184.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 185.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 186,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 186.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 187,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 187.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 188,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 188.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 190.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 192,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 192.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 192.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 193.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 193.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 194.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "pos": "A",
+        "beat": 196.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "skill": true,
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 197.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 198.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 200,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 200.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 201.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 202.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 204,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 204.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 205.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 206.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 206.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 207,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 207,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 207.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 207.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 208,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 208,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 210,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 210.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 211,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 211.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 212,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 212.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 214.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 214.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 216.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 216.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 218,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 218,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 218.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 219,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 219.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 220,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 220.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 222.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 222.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 224,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 224,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 224.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 224.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 225.25,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 225.25,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 226,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 226,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 226.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note",
+        "flick": true
+      },
+      {
+        "beat": 228.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note",
+        "skill": true
+      },
+      {
+        "beat": 228.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 229,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 229,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 229.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 229.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 230,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 230,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 231,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 231,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 231.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 231.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 232,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 232,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 233,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 233,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 233.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 233.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 234,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 234,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "end": true,
+        "pos": "A",
+        "beat": 235.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "end": true,
+        "pos": "B",
+        "beat": 235.5,
+        "lane": 4,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "beat": 236,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 236,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 236.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 236.5,
+        "lane": 4,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 237.5,
+        "lane": 5,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 237.5,
+        "lane": 3,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 238.5,
+        "lane": 6,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 238.5,
+        "lane": 2,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 239.5,
+        "lane": 7,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "beat": 239.5,
+        "lane": 1,
+        "note": "Single",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 240.5,
+        "lane": 7,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "A",
+        "beat": 240.5,
+        "lane": 1,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 242.5,
+        "lane": 6,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 242.5,
+        "lane": 2,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 244.5,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "B",
+        "beat": 244.5,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note"
+      },
+      {
+        "pos": "A",
+        "beat": 251,
+        "lane": 3,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      },
+      {
+        "pos": "B",
+        "beat": 251,
+        "lane": 5,
+        "note": "Slide",
+        "type": "Note",
+        "start": true
+      }
+    ],
+    "graphicsChart": [
+      {
+        "bpm": 170,
+        "time": 0,
+        "type": "BPM"
+      },
+      {
+        "lane": 5,
+        "time": 0.7058823529411765,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 0.8823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 1.0588235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 1.2352941176470589,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 1.411764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          1.5882352941176472,
+          2.294117647058824
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 1.5882352941176472,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          2.294117647058824,
+          3.0000000000000004
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 2.294117647058824,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 2.294117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 2.294117647058824,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 3.0000000000000004,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 3.0000000000000004,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 3.0000000000000004,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          3.0000000000000004,
+          3.3529411764705888
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 3.3529411764705888,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 3.5294117647058827,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 3.7058823529411766,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 3.8823529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 4.0588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 4.235294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 4.411764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          1
+        ],
+        "time": [
+          4.411764705882353,
+          5.11764705882353
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 5.11764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 5.11764705882353,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 5.11764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          5.11764705882353,
+          5.647058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 5.647058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 5.647058823529412,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 5.647058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 5.8235294117647065,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 6.088235294117648,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 5,
+        "time": 6.352941176470589,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 6.529411764705883,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 7.23529411764706,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 7.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 7.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 7.411764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 7.411764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 7.411764705882354,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 7.588235294117648,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 7.588235294117648,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 7.588235294117648,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 7.764705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 7.764705882352943,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 7.764705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 8.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 8.11764705882353,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 8.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 8.294117647058824,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 8.294117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 8.294117647058824,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 8.470588235294118,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 8.470588235294118,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 8.470588235294118,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 8.823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 8.823529411764707,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 8.823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 9,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 9,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 9,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 9.176470588235292,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 9.176470588235292,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 9.176470588235292,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 9.529411764705882,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          1
+        ],
+        "time": [
+          9.529411764705882,
+          11.47058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 9.882352941176473,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 10.058823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 10.411764705882351,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 10.764705882352942,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 11.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 11.47058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          11.47058823529412,
+          12.000000000000002
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 11.47058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 11.47058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 12.000000000000002,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 12.176470588235295,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          12.176470588235295,
+          12.705882352941176
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 12.176470588235295,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 12.176470588235295,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          2
+        ],
+        "time": [
+          12.176470588235295,
+          12.352941176470589
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 12.352941176470589,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          12.352941176470589,
+          12.529411764705882
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          12.529411764705882,
+          12.705882352941176
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 12.529411764705882,
+        "type": "Tick"
+      },
+      {
+        "lane": 4,
+        "time": 12.705882352941176,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 12.705882352941176,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 12.705882352941176,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 12.88235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          12.88235294117647,
+          14.8235294117647
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 12.88235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 12.88235294117647,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 13.058823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 13.235294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 13.41176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          13.764705882352938,
+          13.941176470588232
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 13.764705882352938,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          13.941176470588232,
+          14.117647058823524
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 13.941176470588232,
+        "type": "Tick"
+      },
+      {
+        "lane": 4,
+        "time": 14.117647058823524,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 14.29411764705882,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 14.470588235294112,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 14.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 14.8235294117647,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 14.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": 14.8235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 15.176470588235288,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 15.352941176470582,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 15.529411764705875,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          5
+        ],
+        "time": [
+          15.529411764705875,
+          15.617647058823522
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 15.529411764705875,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 15.529411764705875,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          5,
+          6
+        ],
+        "time": [
+          15.617647058823522,
+          15.705882352941169
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 15.617647058823522,
+        "type": "Tick"
+      },
+      {
+        "lane": 6,
+        "time": 15.705882352941169,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          15.705882352941169,
+          16.94117647058823
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 16.94117647058823,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 16.94117647058823,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 16.94117647058823,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          16.94117647058823,
+          17.470588235294112
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 17.470588235294112,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 17.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 17.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 17.999999999999993,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 18.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 18.529411764705873,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 18.705882352941167,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 18.88235294117646,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 19.05882352941175,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 19.41176470588234,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 19.764705882352928,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 20.117647058823515,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 20.117647058823515,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 20.117647058823515,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 20.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 20.4705882352941,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 20.4705882352941,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          20.4705882352941,
+          20.999999999999982
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 20.4705882352941,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 20.999999999999982,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 21.17647058823528,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          21.17647058823528,
+          21.264705882352928
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          21.264705882352928,
+          21.352941176470576
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 21.264705882352928,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          21.352941176470576,
+          22.58823529411763
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 21.352941176470576,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          22.58823529411763,
+          23.11764705882352
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 22.58823529411763,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 22.58823529411763,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 22.58823529411763,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 23.11764705882352,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 23.11764705882352,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 23.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 23.294117647058812,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 23.294117647058812,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 23.294117647058812,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 23.6470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 23.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 23.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 24.176470588235283,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 24.352941176470576,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 24.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 24.705882352941163,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 24.705882352941163,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 24.705882352941163,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 25.05882352941175,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          25.411764705882337,
+          25.764705882352924
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 25.411764705882337,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          25.764705882352924,
+          26.82352941176469
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 25.764705882352924,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          26.11764705882351,
+          26.82352941176469
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 26.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 26.82352941176469,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 26.82352941176469,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 26.82352941176469,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 27.352941176470573,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 27.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 27.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 27.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 28.058823529411747,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 28.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 28.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 28.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 28.588235294117627,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 28.588235294117627,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 28.588235294117627,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 28.941176470588218,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 29.117647058823508,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 29.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          29.470588235294095,
+          29.82352941176468
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 29.470588235294095,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 29.82352941176468,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 29.82352941176468,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 29.82352941176468,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 30.17647058823527,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 30.529411764705856,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 30.529411764705856,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 30.529411764705856,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 30.882352941176443,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 31.058823529411736,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 31.058823529411736,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 31.058823529411736,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 31.411764705882323,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 31.676470588235265,
+        "type": "SingleOff"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 31.941176470588207,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 31.941176470588207,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 31.941176470588207,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 32.1176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 32.2941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          32.2941176470588,
+          32.647058823529385
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 32.647058823529385,
+        "type": "Flick"
+      },
+      {
+        "lane": 5,
+        "time": 32.647058823529385,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 32.647058823529385,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 32.99999999999997,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 32.99999999999997,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 32.99999999999997,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 33.35294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 33.35294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 33.35294117647056,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 33.88235294117644,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 34.05882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 34.05882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 34.05882352941174,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 34.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 34.588235294117624,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 34.94117647058821,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 34.94117647058821,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 34.94117647058821,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 35.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 35.470588235294095,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          35.470588235294095,
+          35.99999999999998
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 35.99999999999998,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 35.99999999999998,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 35.99999999999998,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          36.17647058823528,
+          36.70588235294116
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 36.17647058823528,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 36.70588235294116,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 36.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 36.70588235294116,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          36.70588235294116,
+          36.794117647058805
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 36.794117647058805,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          4,
+          5
+        ],
+        "time": [
+          36.794117647058805,
+          36.88235294117645
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 36.88235294117645,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          4
+        ],
+        "time": [
+          36.88235294117645,
+          37.05882352941175
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 37.05882352941175,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          4,
+          2
+        ],
+        "time": [
+          37.05882352941175,
+          37.23529411764704
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 37.23529411764704,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          37.41176470588234,
+          38.117647058823515
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 37.41176470588234,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 37.41176470588234,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          37.41176470588234,
+          38.117647058823515
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 37.41176470588234,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 38.117647058823515,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 38.117647058823515,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 38.117647058823515,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 38.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 38.29411764705881,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 38.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 38.6470588235294,
+        "type": "Skill"
+      },
+      {
+        "lane": 6,
+        "time": 38.999999999999986,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 38.999999999999986,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 38.999999999999986,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 39.35294117647057,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 39.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": 39.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 39.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 39.88235294117646,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 40.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 40.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 40.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 40.41176470588234,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 40.58823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 40.764705882352935,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 41.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 41.11764705882352,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 41.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 41.47058823529411,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 41.823529411764696,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 42.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 42.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 42.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 42.35294117647058,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 42.70588235294117,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 42.70588235294117,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 42.70588235294117,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 43.058823529411754,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 43.23529411764705,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 43.41176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 43.588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 43.94117647058823,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 43.94117647058823,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 43.94117647058823,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 44.29411764705882,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 44.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 44.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 45.17647058823529,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 45.35294117647059,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 45.35294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 45.35294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 45.705882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 45.88235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 46.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 46.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 46.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 46.588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          46.76470588235294,
+          47.47058823529411
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 46.76470588235294,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 47.47058823529411,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 47.64705882352941,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 47.82352941176471,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 48.00000000000001,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          48.00000000000001,
+          48.70588235294118
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 48.70588235294118,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 49.05882352941177,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 49.235294117647065,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 49.41176470588236,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 49.58823529411766,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 49.941176470588246,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 50.11764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 50.64705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 51.000000000000014,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          51.000000000000014,
+          52.05882352941178
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 52.05882352941178,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 52.41176470588237,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 52.76470588235296,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 52.94117647058825,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 53.47058823529414,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 53.82352941176472,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 54.088235294117666,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 4,
+        "time": 54.35294117647061,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          54.529411764705905,
+          54.88235294117649
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 54.529411764705905,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 54.88235294117649,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 55.23529411764708,
+        "type": "Skill"
+      },
+      {
+        "lane": 3,
+        "time": 55.23529411764708,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          3
+        ],
+        "time": 55.23529411764708,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 55.411764705882376,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 55.58823529411767,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 55.58823529411767,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 55.58823529411767,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 55.76470588235297,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 55.94117647058827,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 56.117647058823565,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 56.29411764705886,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 56.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 56.647058823529456,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          56.82352941176475,
+          57.00000000000005
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 56.82352941176475,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 57.00000000000005,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 57.00000000000005,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          57.00000000000005,
+          57.35294117647064
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 57.35294117647064,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 57.35294117647064,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 57.35294117647064,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 57.705882352941224,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 57.705882352941224,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 57.705882352941224,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 58.05882352941181,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 58.05882352941181,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 58.05882352941181,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 58.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": 3,
+        "time": 58.764705882352985,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 58.764705882352985,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 58.764705882352985,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 59.11764705882357,
+        "type": "Flick"
+      },
+      {
+        "lane": 1,
+        "time": 59.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 59.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 59.47058823529416,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 59.823529411764746,
+        "type": "Flick"
+      },
+      {
+        "lane": 7,
+        "time": 60.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 60.17647058823533,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 60.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 60.52941176470592,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 60.88235294117651,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          60.88235294117651,
+          62.117647058823565
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 60.88235294117651,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          60.88235294117651,
+          62.117647058823565
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 60.88235294117651,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 62.117647058823565,
+        "type": "Flick"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 62.117647058823565,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 62.117647058823565,
+        "type": "Flick"
+      },
+      {
+        "lane": 1,
+        "time": 62.47058823529415,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 62.47058823529415,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 62.47058823529415,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 62.64705882352945,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 62.64705882352945,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 62.64705882352945,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          62.823529411764746,
+          63.00000000000004
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 62.823529411764746,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 63.00000000000004,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          4
+        ],
+        "time": [
+          63.00000000000004,
+          63.17647058823534
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          63.17647058823534,
+          63.35294117647064
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 63.17647058823534,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          3,
+          2
+        ],
+        "time": [
+          63.35294117647064,
+          63.529411764705934
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 63.35294117647064,
+        "type": "Tick"
+      },
+      {
+        "lane": 2,
+        "time": 63.529411764705934,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 63.70588235294123,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          63.70588235294123,
+          64.23529411764711
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 64.23529411764711,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 64.23529411764711,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          64.23529411764711,
+          65.11764705882358
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 64.23529411764711,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 65.11764705882358,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 65.11764705882358,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          65.11764705882358,
+          65.47058823529417
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 65.11764705882358,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 65.47058823529417,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 65.64705882352946,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 65.82352941176475,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 66.00000000000004,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 66.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 66.35294117647062,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": [
+          66.52941176470591,
+          67.23529411764709
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 66.52941176470591,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 67.23529411764709,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          4
+        ],
+        "time": [
+          67.23529411764709,
+          67.76470588235297
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 67.76470588235297,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 67.94117647058826,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 67.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 67.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 68.29411764705885,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 68.29411764705885,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 68.29411764705885,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 68.64705882352945,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 69.35294117647062,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": [
+          69.35294117647062,
+          69.70588235294122
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 69.70588235294122,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          4
+        ],
+        "time": [
+          69.70588235294122,
+          70.05882352941181
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 70.05882352941181,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          3
+        ],
+        "time": [
+          70.5882352941177,
+          70.76470588235298
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 70.5882352941177,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": [
+          70.76470588235298,
+          71.11764705882358
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 70.76470588235298,
+        "type": "Tick"
+      },
+      {
+        "lane": 5,
+        "time": 71.11764705882358,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          2
+        ],
+        "time": [
+          71.11764705882358,
+          71.47058823529417
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 71.47058823529417,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 72.00000000000006,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 72.17647058823535,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 72.52941176470594,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 72.88235294117653,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 72.88235294117653,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 72.88235294117653,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 73.05882352941182,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 73.05882352941182,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 73.05882352941182,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 73.23529411764711,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 73.23529411764711,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 73.23529411764711,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 73.4117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 73.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 73.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 74.11764705882358,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 74.29411764705887,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          74.47058823529416,
+          74.64705882352945
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 74.47058823529416,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          2
+        ],
+        "time": [
+          74.64705882352945,
+          74.82352941176474
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 74.64705882352945,
+        "type": "Tick"
+      },
+      {
+        "lane": 2,
+        "time": 74.82352941176474,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          75.00000000000003,
+          75.7058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 75.00000000000003,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 75.7058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          75.7058823529412,
+          76.41176470588238
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 75.7058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 75.7058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 76.41176470588238,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          76.41176470588238,
+          76.94117647058826
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 76.41176470588238,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 76.41176470588238,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 76.94117647058826,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 76.94117647058826,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 76.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 77.11764705882355,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 77.29411764705884,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 77.47058823529413,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 77.64705882352942,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 77.82352941176471,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          77.82352941176471,
+          78.52941176470588
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 78.52941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 78.52941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 78.52941176470588,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          78.52941176470588,
+          79.05882352941177
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 79.05882352941177,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 79.05882352941177,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 79.05882352941177,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 79.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 79.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 79.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 79.5,
+        "type": "SingleOff"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 79.5,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 79.5,
+        "type": "SingleOff"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 79.76470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 79.76470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 79.76470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 79.94117647058823,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 80.6470588235294,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 80.6470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 80.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 80.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 80.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 80.8235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 80.99999999999999,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 80.99999999999999,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 80.99999999999999,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 81.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          3
+        ],
+        "time": 81.17647058823528,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 81.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 81.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 81.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 81.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 81.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 81.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 81.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 81.88235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 81.88235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 81.88235294117645,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 82.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 82.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 82.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 82.41176470588233,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 82.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 82.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          82.58823529411762,
+          83.11764705882351
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 82.58823529411762,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 82.58823529411762,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 82.58823529411762,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          82.58823529411762,
+          83.11764705882351
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 83.11764705882351,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 83.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 83.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 83.2941176470588,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 83.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 83.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 83.47058823529409,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 83.47058823529409,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 83.47058823529409,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 83.82352941176468,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 83.82352941176468,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 83.82352941176468,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 84.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 84.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 84.17647058823528,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 84.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 84.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 84.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 84.88235294117646,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          84.88235294117646,
+          85.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 84.88235294117646,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          2
+        ],
+        "time": [
+          84.88235294117646,
+          85.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 84.88235294117646,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 85.58823529411764,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          85.58823529411764,
+          86.29411764705881
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 85.58823529411764,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          85.58823529411764,
+          86.29411764705881
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          86.29411764705881,
+          88.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 86.29411764705881,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          86.29411764705881,
+          88.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 86.29411764705881,
+        "type": "Tick"
+      },
+      {
+        "lane": 5,
+        "time": 88.58823529411764,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 88.58823529411764,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 88.58823529411764,
+        "type": "Sim"
+      }
+    ],
+    "graphicsSimulator": [
+      {
+        "lane": 5,
+        "time": 0.7058823529411765,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 0.8823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 1.0588235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 1.2352941176470589,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 1.411764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          1.5882352941176472,
+          2.294117647058824
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 1.5882352941176472,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          2.294117647058824,
+          3.0000000000000004
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 2.294117647058824,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 2.294117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 2.294117647058824,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 3.0000000000000004,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 3.0000000000000004,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 3.0000000000000004,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          3.0000000000000004,
+          3.3529411764705888
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 3.3529411764705888,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 3.5294117647058827,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 3.7058823529411766,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 3.8823529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 4.0588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 4.235294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 4.411764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          1
+        ],
+        "time": [
+          4.411764705882353,
+          5.11764705882353
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 5.11764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 5.11764705882353,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 5.11764705882353,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          5.11764705882353,
+          5.647058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 5.647058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 5.647058823529412,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 5.647058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 5.8235294117647065,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 6.088235294117648,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 5,
+        "time": 6.352941176470589,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 6.529411764705883,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 7.23529411764706,
+        "type": "Skill"
+      },
+      {
+        "lane": 4,
+        "time": 7.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 7.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 7.411764705882354,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 7.411764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 7.411764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 7.588235294117648,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 7.588235294117648,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 7.588235294117648,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 7.764705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 7.764705882352943,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 7.764705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 8.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 8.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 8.11764705882353,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 8.294117647058824,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 8.294117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 8.294117647058824,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 8.470588235294118,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 8.470588235294118,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 8.470588235294118,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 8.823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 8.823529411764707,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 8.823529411764707,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 9,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 9,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 9,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 9.176470588235292,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 9.176470588235292,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 9.176470588235292,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 9.529411764705882,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          1
+        ],
+        "time": [
+          9.529411764705882,
+          11.47058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 9.882352941176473,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 10.058823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 10.411764705882351,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 10.764705882352942,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 11.11764705882353,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 11.47058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          11.47058823529412,
+          12.000000000000002
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 11.47058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 11.47058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 12.000000000000002,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 12.176470588235295,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          12.176470588235295,
+          12.705882352941176
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 12.176470588235295,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 12.176470588235295,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          2
+        ],
+        "time": [
+          12.176470588235295,
+          12.352941176470589
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 12.352941176470589,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          12.352941176470589,
+          12.529411764705882
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          12.529411764705882,
+          12.705882352941176
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 12.529411764705882,
+        "type": "Tick"
+      },
+      {
+        "lane": 4,
+        "time": 12.705882352941176,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 12.705882352941176,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          7
+        ],
+        "time": 12.705882352941176,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 12.88235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          12.88235294117647,
+          14.8235294117647
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 12.88235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 12.88235294117647,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 13.058823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 13.235294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 13.41176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 13.764705882352938,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          13.764705882352938,
+          13.941176470588232
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          13.941176470588232,
+          14.117647058823524
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 13.941176470588232,
+        "type": "Tick"
+      },
+      {
+        "lane": 4,
+        "time": 14.117647058823524,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 14.29411764705882,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 14.470588235294112,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 14.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 14.8235294117647,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 14.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": 14.8235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 15.176470588235288,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 15.352941176470582,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          5
+        ],
+        "time": [
+          15.529411764705875,
+          15.617647058823522
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 15.529411764705875,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 15.529411764705875,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 15.529411764705875,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 15.617647058823522,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          6
+        ],
+        "time": [
+          15.617647058823522,
+          15.705882352941169
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 15.705882352941169,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          15.705882352941169,
+          16.94117647058823
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 16.94117647058823,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 16.94117647058823,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 16.94117647058823,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          16.94117647058823,
+          17.470588235294112
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 17.470588235294112,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 17.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 17.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 17.999999999999993,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 18.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 18.529411764705873,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 18.705882352941167,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 18.88235294117646,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 19.05882352941175,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 19.41176470588234,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 19.764705882352928,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 20.117647058823515,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 20.117647058823515,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 20.117647058823515,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 20.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 20.4705882352941,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          20.4705882352941,
+          20.999999999999982
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 20.4705882352941,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 20.4705882352941,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 20.999999999999982,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 21.17647058823528,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          21.17647058823528,
+          21.264705882352928
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          21.264705882352928,
+          21.352941176470576
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 21.264705882352928,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          21.352941176470576,
+          22.58823529411763
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 21.352941176470576,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          22.58823529411763,
+          23.11764705882352
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 22.58823529411763,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 22.58823529411763,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 22.58823529411763,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 23.11764705882352,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 23.11764705882352,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 23.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 23.294117647058812,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 23.294117647058812,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 23.294117647058812,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 23.6470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 23.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 23.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 24.176470588235283,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 24.352941176470576,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 24.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 24.705882352941163,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 24.705882352941163,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 24.705882352941163,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 25.05882352941175,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 25.411764705882337,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          25.411764705882337,
+          25.764705882352924
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          25.764705882352924,
+          26.82352941176469
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 25.764705882352924,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          26.11764705882351,
+          26.82352941176469
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 26.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 26.82352941176469,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 26.82352941176469,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 26.82352941176469,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 27.352941176470573,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 27.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 27.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 27.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 28.058823529411747,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 28.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 28.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 28.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 28.588235294117627,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 28.588235294117627,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 28.588235294117627,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 28.941176470588218,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 29.117647058823508,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 29.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          29.470588235294095,
+          29.82352941176468
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 29.470588235294095,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 29.82352941176468,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 29.82352941176468,
+        "type": "Long"
+      },
+      {
+        "lane": 5,
+        "time": 29.82352941176468,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 30.17647058823527,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 30.529411764705856,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 30.529411764705856,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 30.529411764705856,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 30.882352941176443,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 31.058823529411736,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 31.058823529411736,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 31.058823529411736,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 31.411764705882323,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 31.676470588235265,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 7,
+        "time": 31.941176470588207,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 31.941176470588207,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 31.941176470588207,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 32.1176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 32.2941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          32.2941176470588,
+          32.647058823529385
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 32.647058823529385,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 32.647058823529385,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 32.647058823529385,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 32.99999999999997,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 32.99999999999997,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 32.99999999999997,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 33.35294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 33.35294117647056,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 33.35294117647056,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 33.88235294117644,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 34.05882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 34.05882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          7
+        ],
+        "time": 34.05882352941174,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 34.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 34.588235294117624,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 34.94117647058821,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 34.94117647058821,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 34.94117647058821,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 35.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 35.470588235294095,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          35.470588235294095,
+          35.99999999999998
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 35.99999999999998,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 35.99999999999998,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 35.99999999999998,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          36.17647058823528,
+          36.70588235294116
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 36.17647058823528,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 36.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          4
+        ],
+        "time": [
+          36.70588235294116,
+          36.794117647058805
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 36.70588235294116,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 36.70588235294116,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 36.794117647058805,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          4,
+          5
+        ],
+        "time": [
+          36.794117647058805,
+          36.88235294117645
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 36.88235294117645,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          4
+        ],
+        "time": [
+          36.88235294117645,
+          37.05882352941175
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          4,
+          2
+        ],
+        "time": [
+          37.05882352941175,
+          37.23529411764704
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 37.05882352941175,
+        "type": "Tick"
+      },
+      {
+        "lane": 2,
+        "time": 37.23529411764704,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          37.41176470588234,
+          38.117647058823515
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 37.41176470588234,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          37.41176470588234,
+          38.117647058823515
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 37.41176470588234,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 37.41176470588234,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 38.117647058823515,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 38.117647058823515,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 38.117647058823515,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 38.29411764705881,
+        "type": "Sim"
+      },
+      {
+        "lane": 7,
+        "time": 38.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 38.29411764705881,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 38.6470588235294,
+        "type": "Skill"
+      },
+      {
+        "lane": 6,
+        "time": 38.999999999999986,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 38.999999999999986,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 38.999999999999986,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 39.35294117647057,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 39.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 39.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": 39.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 39.88235294117646,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 40.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 40.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 40.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 40.41176470588234,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 40.58823529411764,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 40.764705882352935,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 41.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 41.11764705882352,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 41.11764705882352,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 41.47058823529411,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 41.823529411764696,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 42.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 42.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 42.35294117647058,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 42.35294117647058,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 42.70588235294117,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 42.70588235294117,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 42.70588235294117,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 43.058823529411754,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 43.23529411764705,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 43.41176470588235,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 43.588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 43.94117647058823,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 43.94117647058823,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 43.94117647058823,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 44.29411764705882,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 44.647058823529406,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 44.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 45.17647058823529,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 45.35294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 45.35294117647059,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 45.35294117647059,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 45.705882352941174,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 45.88235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 46.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 46.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 46.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 46.588235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 46.76470588235294,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          46.76470588235294,
+          47.47058823529411
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 47.47058823529411,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 47.64705882352941,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 47.82352941176471,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 48.00000000000001,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          48.00000000000001,
+          48.70588235294118
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 48.70588235294118,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 49.05882352941177,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 49.235294117647065,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 49.41176470588236,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 49.58823529411766,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 49.941176470588246,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 50.11764705882354,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 50.64705882352943,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          51.000000000000014,
+          52.05882352941178
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 51.000000000000014,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 52.05882352941178,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 52.41176470588237,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 52.76470588235296,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 52.94117647058825,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 53.47058823529414,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 53.82352941176472,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 54.088235294117666,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 4,
+        "time": 54.35294117647061,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          7,
+          7
+        ],
+        "time": [
+          54.529411764705905,
+          54.88235294117649
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 54.529411764705905,
+        "type": "Long"
+      },
+      {
+        "lane": 7,
+        "time": 54.88235294117649,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 55.23529411764708,
+        "type": "Skill"
+      },
+      {
+        "lane": 3,
+        "time": 55.23529411764708,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          3
+        ],
+        "time": 55.23529411764708,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 55.411764705882376,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 55.58823529411767,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 55.58823529411767,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 55.58823529411767,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 55.76470588235297,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 55.94117647058827,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 56.117647058823565,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 56.29411764705886,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 56.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 56.647058823529456,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 56.82352941176475,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          56.82352941176475,
+          57.00000000000005
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 57.00000000000005,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          57.00000000000005,
+          57.35294117647064
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 57.00000000000005,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          1,
+          5
+        ],
+        "time": 57.35294117647064,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 57.35294117647064,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 57.35294117647064,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          4
+        ],
+        "time": 57.705882352941224,
+        "type": "Sim"
+      },
+      {
+        "lane": 1,
+        "time": 57.705882352941224,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 57.705882352941224,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 58.05882352941181,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 58.05882352941181,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          5
+        ],
+        "time": 58.05882352941181,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 58.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": 3,
+        "time": 58.764705882352985,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 58.764705882352985,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 58.764705882352985,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 59.11764705882357,
+        "type": "Flick"
+      },
+      {
+        "lane": 1,
+        "time": 59.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 59.47058823529416,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 59.47058823529416,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 59.823529411764746,
+        "type": "Flick"
+      },
+      {
+        "lane": 3,
+        "time": 60.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 60.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          7
+        ],
+        "time": 60.17647058823533,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 60.52941176470592,
+        "type": "Flick"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          60.88235294117651,
+          62.117647058823565
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 60.88235294117651,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 60.88235294117651,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          60.88235294117651,
+          62.117647058823565
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 60.88235294117651,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 62.117647058823565,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 62.117647058823565,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 62.117647058823565,
+        "type": "Flick"
+      },
+      {
+        "lane": 1,
+        "time": 62.47058823529415,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 62.47058823529415,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 62.47058823529415,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 62.64705882352945,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 62.64705882352945,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 62.64705882352945,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          62.823529411764746,
+          63.00000000000004
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 62.823529411764746,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          5,
+          4
+        ],
+        "time": [
+          63.00000000000004,
+          63.17647058823534
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 63.00000000000004,
+        "type": "Tick"
+      },
+      {
+        "lane": 4,
+        "time": 63.17647058823534,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          63.17647058823534,
+          63.35294117647064
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 63.35294117647064,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          3,
+          2
+        ],
+        "time": [
+          63.35294117647064,
+          63.529411764705934
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 63.529411764705934,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 63.70588235294123,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          63.70588235294123,
+          64.23529411764711
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 64.23529411764711,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 64.23529411764711,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          64.23529411764711,
+          65.11764705882358
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 64.23529411764711,
+        "type": "Long"
+      },
+      {
+        "lane": 4,
+        "time": 65.11764705882358,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          65.11764705882358,
+          65.47058823529417
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 65.11764705882358,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 65.11764705882358,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 65.47058823529417,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 65.64705882352946,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 65.82352941176475,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 66.00000000000004,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 66.17647058823533,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 66.35294117647062,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 66.52941176470591,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          6
+        ],
+        "time": [
+          66.52941176470591,
+          67.23529411764709
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 67.23529411764709,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          4
+        ],
+        "time": [
+          67.23529411764709,
+          67.76470588235297
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 67.76470588235297,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 67.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 67.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 67.94117647058826,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 68.29411764705885,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 68.29411764705885,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 68.29411764705885,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 68.64705882352945,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 69.35294117647062,
+        "type": "Skill"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": [
+          69.35294117647062,
+          69.70588235294122
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 69.70588235294122,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          4
+        ],
+        "time": [
+          69.70588235294122,
+          70.05882352941181
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 70.05882352941181,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          7,
+          3
+        ],
+        "time": [
+          70.5882352941177,
+          70.76470588235298
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 70.5882352941177,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": [
+          70.76470588235298,
+          71.11764705882358
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 70.76470588235298,
+        "type": "Tick"
+      },
+      {
+        "lane": 5,
+        "time": 71.11764705882358,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          2
+        ],
+        "time": [
+          71.11764705882358,
+          71.47058823529417
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 2,
+        "time": 71.47058823529417,
+        "type": "Long"
+      },
+      {
+        "lane": 1,
+        "time": 72.00000000000006,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 72.17647058823535,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 72.52941176470594,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 72.88235294117653,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 72.88235294117653,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 72.88235294117653,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 73.05882352941182,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 73.05882352941182,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 73.05882352941182,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 73.23529411764711,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 73.23529411764711,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 73.23529411764711,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 73.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 73.4117647058824,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 73.4117647058824,
+        "type": "Flick"
+      },
+      {
+        "lane": 2,
+        "time": 74.11764705882358,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 74.29411764705887,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          3
+        ],
+        "time": [
+          74.47058823529416,
+          74.64705882352945
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 74.47058823529416,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          2
+        ],
+        "time": [
+          74.64705882352945,
+          74.82352941176474
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 74.64705882352945,
+        "type": "Tick"
+      },
+      {
+        "lane": 2,
+        "time": 74.82352941176474,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 75.00000000000003,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          75.00000000000003,
+          75.7058823529412
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          75.7058823529412,
+          76.41176470588238
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 75.7058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 75.7058823529412,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 75.7058823529412,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          76.41176470588238,
+          76.94117647058826
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 76.41176470588238,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 76.41176470588238,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 76.41176470588238,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 76.94117647058826,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 76.94117647058826,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 76.94117647058826,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 77.11764705882355,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 77.29411764705884,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 77.47058823529413,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 77.64705882352942,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          77.82352941176471,
+          78.52941176470588
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 77.82352941176471,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          6,
+          6
+        ],
+        "time": [
+          78.52941176470588,
+          79.05882352941177
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 78.52941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          6
+        ],
+        "time": 78.52941176470588,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 78.52941176470588,
+        "type": "Long"
+      },
+      {
+        "lane": 6,
+        "time": 79.05882352941177,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 79.05882352941177,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 79.05882352941177,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 79.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 79.23529411764706,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 79.23529411764706,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 79.5,
+        "type": "SingleOff"
+      },
+      {
+        "lane": 2,
+        "time": 79.5,
+        "type": "SingleOff"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 79.5,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 79.76470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 79.76470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 79.76470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 79.94117647058823,
+        "type": "Flick"
+      },
+      {
+        "lane": 6,
+        "time": 80.6470588235294,
+        "type": "Skill"
+      },
+      {
+        "lane": 4,
+        "time": 80.6470588235294,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 80.6470588235294,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 80.8235294117647,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 80.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 80.8235294117647,
+        "type": "Single"
+      },
+      {
+        "lane": 2,
+        "time": 80.99999999999999,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 80.99999999999999,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 80.99999999999999,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 81.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 81.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          3
+        ],
+        "time": 81.17647058823528,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 81.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 81.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 81.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 81.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 81.70588235294116,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 81.70588235294116,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 81.88235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 81.88235294117645,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 81.88235294117645,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 82.23529411764704,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 82.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 82.23529411764704,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 82.41176470588233,
+        "type": "Sim"
+      },
+      {
+        "lane": 3,
+        "time": 82.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": 5,
+        "time": 82.41176470588233,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          2
+        ],
+        "time": [
+          82.58823529411762,
+          83.11764705882351
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 4,
+        "time": 82.58823529411762,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 82.58823529411762,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 82.58823529411762,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          4,
+          4
+        ],
+        "time": [
+          82.58823529411762,
+          83.11764705882351
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 83.11764705882351,
+        "type": "Sim"
+      },
+      {
+        "lane": 4,
+        "time": 83.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 83.11764705882351,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          2,
+          4
+        ],
+        "time": 83.2941176470588,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 83.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 83.2941176470588,
+        "type": "Single"
+      },
+      {
+        "lane": 4,
+        "time": 83.47058823529409,
+        "type": "Single"
+      },
+      {
+        "lane": 6,
+        "time": 83.47058823529409,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          4,
+          6
+        ],
+        "time": 83.47058823529409,
+        "type": "Sim"
+      },
+      {
+        "lane": 5,
+        "time": 83.82352941176468,
+        "type": "Single"
+      },
+      {
+        "lane": 3,
+        "time": 83.82352941176468,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 83.82352941176468,
+        "type": "Sim"
+      },
+      {
+        "lane": 2,
+        "time": 84.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          2,
+          6
+        ],
+        "time": 84.17647058823528,
+        "type": "Sim"
+      },
+      {
+        "lane": 6,
+        "time": 84.17647058823528,
+        "type": "Single"
+      },
+      {
+        "lane": 7,
+        "time": 84.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": 1,
+        "time": 84.52941176470587,
+        "type": "Single"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 84.52941176470587,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          1,
+          7
+        ],
+        "time": 84.88235294117646,
+        "type": "Sim"
+      },
+      {
+        "lane": [
+          7,
+          6
+        ],
+        "time": [
+          84.88235294117646,
+          85.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 7,
+        "time": 84.88235294117646,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          1,
+          2
+        ],
+        "time": [
+          84.88235294117646,
+          85.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 1,
+        "time": 84.88235294117646,
+        "type": "Long"
+      },
+      {
+        "lane": 2,
+        "time": 85.58823529411764,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          2,
+          3
+        ],
+        "time": [
+          85.58823529411764,
+          86.29411764705881
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 6,
+        "time": 85.58823529411764,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          6,
+          5
+        ],
+        "time": [
+          85.58823529411764,
+          86.29411764705881
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": [
+          3,
+          3
+        ],
+        "time": [
+          86.29411764705881,
+          88.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 5,
+        "time": 86.29411764705881,
+        "type": "Tick"
+      },
+      {
+        "lane": [
+          5,
+          5
+        ],
+        "time": [
+          86.29411764705881,
+          88.58823529411764
+        ],
+        "type": "Bar"
+      },
+      {
+        "lane": 3,
+        "time": 86.29411764705881,
+        "type": "Tick"
+      },
+      {
+        "lane": 5,
+        "time": 88.58823529411764,
+        "type": "Long"
+      },
+      {
+        "lane": 3,
+        "time": 88.58823529411764,
+        "type": "Long"
+      },
+      {
+        "lane": [
+          3,
+          5
+        ],
+        "time": 88.58823529411764,
+        "type": "Sim"
+      }
+    ],
+    "content": [
+      {
+        "data": "<Because my English is not so good, if there are any mistakes below, please ignore them.>",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "OP of Anime \"Magic of Stella\"（ステラのまほう）",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "Notes: 386",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "Difficulty: 23",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "It's my 3rd chart!",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "At first, I wanted to make a LV.25+ chart but I failed because making a LV.25+ chart of this song will make the chart a mess. I only made a chart which difficulty is 23(or maybe lower). ",
+        "type": "text"
+      },
+      {
+        "data": "HimariPout",
+        "type": "emoji"
+      },
+      {
+        "data": " ",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "By the way, the anime \"Magic of Stella\" is a wonderful anime but it enjoys a low popularity. Strongly suggests to have a try watching that.",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "If you like my charts, please subscribe me. I'll keep posting new charts. ",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "And if you want me to make a chart of your favorite song, tell me in the comment area and I'll try to make that.",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "And if there are any problems in my chart, please tell me in the comment area too.",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "斯特拉的魔法（ステラのまほう）的OP",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "物量：386",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "难度：23",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "我的第三个bangdream谱面。",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "本来一开始想做25级+的谱面的，然而如果写到25级+会变得很粪（本人水平受限）。于是便有了此23级（甚至还没有）的谱面。 ",
+        "type": "text"
+      },
+      {
+        "data": "HimariPout",
+        "type": "emoji"
+      },
+      {
+        "data": " ",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "顺便给《斯特拉的魔法》打个广告，这部番真心不错，但人气很低。",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "如果喜欢我做的谱面，欢迎关注我。我会持续发布新谱但因为是大学生所以更新时间不稳定。",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "欢迎各位点歌。",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "如果谱面有什么问题或错误，敬请指出。",
+        "type": "text"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "type": "br"
+      },
+      {
+        "data": "My previous chart(我的前一作)：One room sugar life EXPERT LV.26: ",
+        "type": "text"
+      },
+      {
+        "data": "https://bestdori.com/community/charts/1180",
+        "type": "link",
+        "target": "url"
+      },
+      {
+        "data": " ",
+        "type": "text"
+      }
+    ],
+    "time": 1569159495000,
+    "author": {
+      "username": "psk2019",
+      "nickname": "稳音绫与6QHTSK",
+      "titles": [
+        {
+          "id": 480,
+          "type": "bandori",
+          "server": 3
+        }
+      ]
+    },
+    "likes": 4,
+    "liked": false,
+    "tags": [
+      {
+        "type": "text",
+        "data": "Magic of Stella"
+      }
+    ]
+  }
+}
