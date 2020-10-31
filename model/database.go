@@ -33,17 +33,26 @@ func InitDatabase() (err error) {
 	return nil
 }
 
-func QueryChartDetail(chartID int, diff int) (detail Detail, empty bool) {
+func QueryChartBasic(chartID int, diff int) (chart Chart, empty bool) {
+	filter := bson.M{"id": chartID, "diff": diff}
+	err := detailColl.FindOne(context.TODO(), filter).Decode(&chart)
+	if err != nil {
+		return chart, true
+	}
+	return chart, false
+}
+
+func QueryChartDetail(chartID int, diff int) (detail Detail, err error) {
 	filter := make(bson.M)
 	filter["id"] = chartID
 	if chartID <= 500 || chartID == 1000 || chartID == 1001 {
 		filter["diff"] = diff
 	}
-	err := detailColl.FindOne(context.TODO(), filter).Decode(&detail)
+	err = detailColl.FindOne(context.TODO(), filter).Decode(&detail)
 	if err != nil {
-		return detail, true
+		return detail, err
 	}
-	return detail, false
+	return detail, err
 }
 
 func UpdateBasic(chartID int, diff int, chart Chart) (err error) {

@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"regexp"
 	"strconv"
 )
 
@@ -51,14 +50,8 @@ func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 	err = json.Unmarshal(raw, &res)
 
 	// Get notes data of a chart:
-	reg := regexp.MustCompile(fmt.Sprintf("\"(\\d)\":{\"level\":%d,\"notes\"", diff))
-	match := reg.FindSubmatch(raw)
-	diffType, err := strconv.Atoi(string(match[1]))
-	if err != nil {
-		return chart, fmt.Errorf("diff not found")
-	}
 	diffName := [5]string{"easy", "normal", "hard", "expert", "special"}
-	raw, err = requestForJson(fmt.Sprintf(officialChartURL, strID, diffName[diffType]))
+	raw, err = requestForJson(fmt.Sprintf(officialChartURL, strID, diffName[diff]))
 	if err != nil {
 		return chart, err
 	}

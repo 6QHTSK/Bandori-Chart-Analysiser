@@ -1,13 +1,13 @@
 package model
 
 type Chart struct {
-	Notes    []Note `bson:"chart"`
+	ID       int    `bson:"id"`
+	Diff     int    `bson:"diff"`
 	Level    int    `bson:"level"`
 	AuthorID int    `bson:"authorID"`
 	Artist   string `bson:"artist"`
 	Title    string `bson:"title"`
-	ID       int    `bson:"id"`
-	Diff     int    `bson:"diff"`
+	Notes    []Note `bson:"chart"`
 }
 
 type Detail struct {
@@ -61,18 +61,18 @@ type FanBasic struct {
 }
 
 type Note struct {
-	Type   string  `json:"type"`
-	CMD    string  `json:"cmd"`
-	BPM    float32     `json:"bpm"`
-	Beat   float32 `json:"beat"`
-	Effect string  `json:"effect"`
-	Time   float32 `json:"time"`
-	Note   string  `json:"note"`
-	Lane   int     `json:"lane"`
-	Skill  bool    `json:"skill"`
-	Start  bool    `json:"start"`
-	End    bool    `json:"end"`
-	Flick  bool    `json:"flick"`
-	Charge bool    `json:"charge"`
-	Pos    string  `json:"pos"`
+	Type   string  `json:"type" bson:"type"`
+	CMD    string  `json:"cmd" bson:"cmd"`
+	BPM    float32 `json:"bpm" bson:"bpm"`
+	Beat   float32 `json:"beat" bson:"beat"`
+	Effect string  `json:"effect" bson:"effect"`
+	Time   float32 `json:"time" bson:"time"`
+	Note   string  `json:"note" bson:"note"`
+	Lane   int     `json:"lane" bson:"lane"`
+	Skill  bool    `json:"skill" bson:"skill"`
+	Start  bool    `json:"start" bson:"start"`
+	End    bool    `json:"end" bson:"end"`
+	Flick  bool    `json:"flick" bson:"flick"`
+	Charge bool    `json:"charge" bson:"charge"`
+	Pos    string  `json:"pos" bson:"pos"`
 }

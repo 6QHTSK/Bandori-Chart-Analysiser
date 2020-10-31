@@ -1,3 +1,4 @@
+/*
 package controller
 
 import (
@@ -10,7 +11,7 @@ import (
 
 var mainBPM float32
 
-/*
+
 bestdori 音符类解释
 所有音符类共有元素: beat : <此音符的拍数>
 	1. BPM 变化音符：必定含有 type : System , cmd: BPM, bpm : <此BPM变化音符变化的BPM>
@@ -23,7 +24,7 @@ bestdori 音符类解释
 			ii. 中间节点： 无额外内容
 			iii. 尾节点： end: True
 			iv. 尾粉：end: True, flick : True
-*/
+
 
 type Note struct {
 	model.Note
@@ -59,7 +60,7 @@ func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 	if err != nil {
 		res.Error += err.Error() + "\n"
 	}
-	res.LeftPercent, res.FingerMaxHPS, res.FlickNoteInterval, res.NoteFlickInterval, res.MaxSpeed, err = calcDetails(finger1, finger2)
+	res.LeftPercent, res.FingerMaxHPS, res.FlickNoteInterval, res.NoteFlickInterval, res.MaxSpeed, err = calcDetails(&finger1, &finger2)
 	if err != nil {
 		res.Error += err.Error() + "\n"
 	}
@@ -81,7 +82,13 @@ func calcTime(chart []Note) ([]Note, []Note, float32, float32, float32) {
 	maxOffsetTime = -1.0
 	isThereNote := false //排除前面用来改变offset用的bpm变化点
 
-	for index, note := range chart {
+	sort.Slice(noteList, func(i, j int) bool {
+		if noteList[i].Beat == noteList[j].Beat {
+			return noteList[i].Lane > noteList[j].Lane
+		}
+		return noteList[i].Beat < noteList[j].Beat
+	})
+	for _, note := range chart {
 		if note.Type == "System" {
 			//此时应为BPM 变化点
 			lastOffsetTime := offsetTime
@@ -115,19 +122,11 @@ func calcTime(chart []Note) ([]Note, []Note, float32, float32, float32) {
 			isThereNote = true //排除上一个BPM变化点是用来改变offset用的变化点
 			//计算与上一个BPM变化点的拍数，结合上一个BPM算出此时的时间
 			note.Time = (note.Beat-offsetBeat)*(60.0/bpm) + offsetTime
-			note.index = index
+			//note.index = index - 1
 			noteList = append(noteList, note) //加入note列表以便后面使用
 		}
 	}
-	sort.Slice(noteList, func(i, j int) bool {
-		if noteList[i].Beat == noteList[j].Beat {
-			return noteList[i].Lane > noteList[j].Lane
-		}
-		return noteList[i].Beat < noteList[j].Beat
-	})
-	if noteList[len(noteList)-1].Time-offsetTime > maxOffsetTime {
-		mainBPM = bpm
-	}
+
 	//返回值：含时间的纯净note列表（以beat为顺序，相同时间以lane为顺序），最低 bpm， 最高bpm
 	return noteList, bpmChart, BPMLow, BPMHigh, mainBPM
 }
@@ -471,8 +470,8 @@ func (finger *Finger) calcDelta() int {
 	sort.Slice(*noteList, func(i, j int) bool {
 		return (*noteList)[i].Time < (*noteList)[j].Time
 	})
-	(*noteList)[0].back = []float32{0, -1} //第一个note是没有前面note的，所以置-1
-	(*noteList)[len(*noteList)-1].back = []float32{0, -1} //最后一个note是没有后面note的，所以置-1
+	(*noteList)[0].back = []float32{0, -1}                 //第一个note是没有前面note的，所以置-1
+	(*noteList)[len(*noteList)-1].front = []float32{0, -1} //最后一个note是没有后面note的，所以置-1
 	for i := 0; i < len(*noteList)-1; i++ {
 		//对每一个note进行计算
 		speed := abs(float32((*noteList)[i+1].Lane) - float32((*noteList)[i].Lane)/(*noteList)[i+1].Time).(float32)
@@ -499,7 +498,9 @@ func SliceNoteList(noteList []Note) (res []*[]Note, sliceTime float32) {
 	tmp = new([]Note)
 	for _, note := range noteList {
 		if note.Time-subNoteTime > sliceTime {
-			copy(*tmp, subNoteList)
+			for _, note := range subNoteList {
+				*tmp = append(*tmp, note)
+			}
 			res = append(res, tmp)
 			subNoteList = []Note{}
 			tmp = new([]Note)
@@ -511,15 +512,15 @@ func SliceNoteList(noteList []Note) (res []*[]Note, sliceTime float32) {
 }
 
 //计算谱面的需要分离左右手的数据
-func calcDetails(lHand, rHand Finger) (float32, float32, float32, float32, float32, error) {
+func calcDetails(lHand, rHand *Finger) (float32, float32, float32, float32, float32, error) {
 	var lPercent, fingerMaxHPS, noteFlickInterval, flickNoteInterval, maxSPD float32
 	var rankStart, rankEnd int
-	var subHPSList, flickInterval1, flickInterval2, SPD, tmp []float32
+	var subHPSList, flickInterval1, flickInterval2, SPD []float32
 	var hitNoteList, flickNoteList []Note
 
-	l := lHand.calcDelta() //计算左手击打音符的数量和标记差值时间
-	r := rHand.calcDelta() //计算右手击打音符的数量和标记差值时间
-	lPercent = float32(l) / float32(l+r) //计算左右手分配压力
+	l := lHand.calcDelta()                                 //计算左手击打音符的数量和标记差值时间
+	r := rHand.calcDelta()                                 //计算右手击打音符的数量和标记差值时间
+	lPercent = float32(l) / float32(l+r)                   //计算左右手分配压力
 	ptrList := []*[]Note{&lHand.noteList, &rHand.noteList} //打包note_list便于循环
 	for _, handList := range ptrList {
 		//先进行爆发单手检测
@@ -536,7 +537,7 @@ func calcDetails(lHand, rHand Finger) (float32, float32, float32, float32, float
 		}
 		//再进行爆发粉键检测，包括前向检测和后向检测
 		sort.Slice(*handList, func(i, j int) bool {
-			return (*handList)[i].front[1] < (*handList)[j].front[1]
+			return (*handList)[i].front[1] > (*handList)[j].front[1]
 		})
 		flickNoteList = []Note{} //为单个粉键的时候，可以计算该粉键和前面那个note的间隔
 		for _, note := range *handList {
@@ -575,21 +576,16 @@ func calcDetails(lHand, rHand Finger) (float32, float32, float32, float32, float
 		SPD = append(SPD, average((*handList)[rankEnd:rankStart], 0, 0))
 	}
 	//返回这些检测值的最大值
-	copy(tmp, subHPSList)
-	sort.Slice(tmp, func(i, j int) bool {
+	sort.Slice(subHPSList, func(i, j int) bool {
 		return subHPSList[i] < subHPSList[j]
 	})
-	rankStart = len(tmp)
-	rankEnd = int(math.Floor(float64(len(tmp)) * 0.95))
+	rankStart = len(subHPSList)
+	rankEnd = int(math.Floor(float64(len(subHPSList)) * 0.95))
 	var sum float32
 	sum = 0.0
-	if rankStart >= len(tmp) || rankEnd <= 0 {
-		return 0, 0, 0, 0, 0, fmt.Errorf("list out of range")
-	}
 	for i := rankEnd; i < rankStart; i++ {
-		sum += tmp[i]
+		sum += subHPSList[i]
 	}
-	// !!!!!!!!!!!!wei!!!!!!!!!!!!!!!
 	fingerMaxHPS = sum / float32(rankStart-rankEnd)
 	noteFlickInterval = 0.0
 	flickNoteInterval = 0.0
@@ -641,7 +637,7 @@ func activateDetails(chart []Note) (float32, float32, float32, float32) {
 			chartData = append(chartData, float32(len(*subChart))/sliceTime)
 		}
 		sort.Slice(chartData, func(i, j int) bool {
-			return chartData[i] < chartData[j]
+			return chartData[i] > chartData[j]
 		})
 		for _, data := range chartData {
 			activeChartData = []float32{}
@@ -728,3 +724,4 @@ func abs(x interface{}) interface{} {
 	}
 	return 0
 }
+*/
