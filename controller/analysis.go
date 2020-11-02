@@ -51,6 +51,7 @@ func DiffAnalysis(ctx *gin.Context) {
 	if err != nil {
 		log.Println(err)
 	}
+	chart.Notes = nil
 	result := gin.H{
 		"result": true,
 		"basic":  chart,

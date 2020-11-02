@@ -7,6 +7,7 @@ import (
 	"math"
 	"sort"
 )
+
 /*
 bestdori 音符类解释
 所有音符类共有元素: beat : <此音符的拍数>
@@ -21,7 +22,6 @@ bestdori 音符类解释
 			iii. 尾节点： end: True
 			iv. 尾粉：end: True, flick : True
 */
-var mainBPM float32
 
 type Note struct {
 	model.Note
@@ -41,7 +41,7 @@ type Finger struct {
 func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 	res.ID = chartID
 	res.Diff = diff
-	chart, _, res.BPMLow, res.BPMHigh, res.MainBPM = calcTime(chart)
+	chart, res.BPMLow, res.BPMHigh, res.MainBPM = calcTime(chart)
 	res.TotalTime, res.TotalNote, res.TotalNPS, res.TotalHitNote, res.TotalHPS = CalcChartDetails(chart)
 	if res.TotalTime <= 20 {
 		res.Error = "20+ Seconds Required"
@@ -66,15 +66,20 @@ func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 //计算bestdori格式的各个note的时间；
 //输入：bestdori格式的谱面；
 //返回值：含时间的纯净note列表，最低 bpm， 最高bpm
-func calcTime(chart []Note) ([]Note, []Note, float32, float32, float32) {
-	var noteList, bpmChart []Note
-	var bpm, offsetTime, offsetBeat, BPMLow, BPMHigh, maxOffsetTime float32
+func calcTime(chart []Note) ([]Note, float32, float32, float32) {
+	var noteList []Note
+	var bpm, offsetTime, offsetBeat, BPMLow, BPMHigh, maxBPMTime, mainBPM float32
+	var bpmMap map[float32]float32
+	var BPMCounter int
+	bpmMap = make(map[float32]float32)
 	bpm = 60
 	offsetTime = 0.0
 	offsetBeat = 0.0
 	BPMLow = math.MaxFloat32
 	BPMHigh = -1.0
-	maxOffsetTime = -1.0
+	mainBPM = 60
+	maxBPMTime = -1.0
+	BPMCounter = 0
 	isThereNote := false
 
 	sort.Slice(noteList, func(i, j int) bool {
@@ -88,19 +93,16 @@ func calcTime(chart []Note) ([]Note, []Note, float32, float32, float32) {
 		if note.Type == "System" {
 			lastOffsetTime := offsetTime
 			offsetTime = (note.Beat-offsetBeat)*(60.0/bpm) + offsetTime
+			bpmMap[bpm] = bpmMap[bpm] + offsetTime - lastOffsetTime
 			bpm = abs(note.BPM).(float32)
+			BPMCounter++
 			if note.BPM < 0 {
 				bpm = -bpm
 			}
 			offsetBeat = note.Beat
-			bpmChart = append(bpmChart, note)
 			if !isThereNote {
 				BPMLow = math.MaxFloat32
 				BPMHigh = -1.0
-			}
-			if offsetTime-lastOffsetTime > maxOffsetTime {
-				mainBPM = bpm
-				maxOffsetTime = offsetTime - lastOffsetTime
 			}
 			if bpm < BPMLow {
 				BPMLow = bpm
@@ -111,15 +113,20 @@ func calcTime(chart []Note) ([]Note, []Note, float32, float32, float32) {
 		} else if note.Type == "Note" {
 			isThereNote = true
 			note.Time = (note.Beat-offsetBeat)*(60.0/bpm) + offsetTime
-			note.index = index - len(bpmChart)
+			note.index = index - BPMCounter
 			noteList = append(noteList, note)
 		}
 	}
-	if noteList[len(noteList)-1].Time-offsetTime > maxOffsetTime {
-		mainBPM = bpm
+	bpmMap[bpm] = bpmMap[bpm] + noteList[len(noteList)-1].Time - offsetTime
+	for bpmItem := range bpmMap {
+		if bpmMap[bpmItem] > maxBPMTime {
+			maxBPMTime = bpmMap[bpmItem]
+			mainBPM = bpmItem
+		}
+
 	}
 	//返回值：含时间的纯净note列表（以beat为顺序，相同时间以lane为顺序），最低 bpm， 最高bpm
-	return noteList, bpmChart, BPMLow, BPMHigh, mainBPM
+	return noteList, BPMLow, BPMHigh, mainBPM
 }
 
 //计算在某个beat、某个time时，该手指的位置。

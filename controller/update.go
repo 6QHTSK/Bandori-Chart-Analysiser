@@ -12,7 +12,7 @@ import (
 const (
 	officialURL      = "https://player.banground.fun/api/bestdori/official/info/%s/zh"
 	officialChartURL = "https://bestdori.com/api/songs/chart/%s.%s.json"
-	fanChartURL      = "https://bestdori.reikohaku.fun/api/post/details?id="
+	fanChartURL      = "https://bestdori.com/api/post/details?id="
 )
 
 func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err error) {
@@ -20,6 +20,9 @@ func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err
 		chart, err = getOfficialChart(chartID, diff)
 	} else {
 		chart, err = getFanMadeChart(chartID, diff)
+	}
+	if chart.Level == 0 {
+		return chart, detail, fmt.Errorf("Not A Chart!")
 	}
 	if err != nil {
 		return chart, detail, err
