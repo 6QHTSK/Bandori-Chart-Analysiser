@@ -42,8 +42,8 @@ func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err
 	for _, note := range chart.Notes {
 		notes = append(notes, Note{Note: note})
 	}
-	detail = getChartDetail(chartID, diff, notes)
-	err = model.UpdateDetail(chartID, diff, detail)
+	detail = getChartDetail(chartID, chart.Diff, notes)
+	err = model.UpdateDetail(chartID, chart.Diff, detail)
 	return chart, detail, err
 }
 
@@ -81,7 +81,7 @@ func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 	chart = model.Chart{
 		Notes:    fanNotes,
 		Level:    res.Data.Difficulty[strDiff].Level,
-		AuthorID: getAuthorID(),
+		AuthorID: 0, //getAuthorID(),
 		Artist:   res.Data.Band,
 		Title:    res.Data.Name,
 		ID:       chartID,
@@ -102,7 +102,7 @@ func getFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
 	chart = model.Chart{
 		Notes:    res.Post.Chart,
 		Level:    res.Post.Level,
-		AuthorID: getAuthorID(),
+		AuthorID: 1, //getAuthorID(),
 		Artist:   res.Post.Artist,
 		Title:    res.Post.Title,
 		ID:       chartID,

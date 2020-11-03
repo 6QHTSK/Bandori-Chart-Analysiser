@@ -46,8 +46,9 @@ func DiffAnalysis(ctx *gin.Context) {
 			return
 		}
 		log.Println(fmt.Sprintf("chart (id-%d, diff-%d) updated successfully... ", chartID, diff))
+	} else {
+		detail, err = model.QueryChartDetail(chartID, diff)
 	}
-	detail, err = model.QueryChartDetail(chartID, diff)
 	if err != nil {
 		log.Println(err)
 	}

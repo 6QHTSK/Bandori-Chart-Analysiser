@@ -34,12 +34,18 @@ func InitDatabase() (err error) {
 }
 
 func QueryChartBasic(chartID int, diff int) (chart Chart, empty bool) {
-	filter := bson.M{"id": chartID, "diff": diff}
+	filter := bson.M{"id": chartID, "authorID": bson.M{"$ne": 0}}
 	cur, _ := basicColl.Find(context.TODO(), filter)
 	var res []Chart
 	cur.All(context.TODO(), &res)
 	if len(res) == 0 {
-		return chart, true
+		filter = bson.M{"id": chartID, "diff": diff, "authorID": 0}
+		cur, _ := basicColl.Find(context.TODO(), filter)
+		var res []Chart
+		cur.All(context.TODO(), &res)
+		if len(res) == 0 {
+			return chart, true
+		}
 	}
 	return res[0], false
 }
@@ -47,9 +53,9 @@ func QueryChartBasic(chartID int, diff int) (chart Chart, empty bool) {
 func QueryChartDetail(chartID int, diff int) (detail Detail, err error) {
 	filter := make(bson.M)
 	filter["id"] = chartID
-	if chartID <= 500 || chartID == 1000 || chartID == 1001 {
-		filter["diff"] = diff
-	}
+	//if chartID <= 500 || chartID == 1000 || chartID == 1001 {
+	//	filter["diff"] = diff
+	//}
 	err = detailColl.FindOne(context.TODO(), filter).Decode(&detail)
 	if err != nil {
 		return detail, err
@@ -69,6 +75,7 @@ func UpdateBasic(chartID int, diff int, chart Chart) (err error) {
 }
 
 func UpdateDetail(chartID int, diff int, detail Detail) (err error) {
+
 	filter := bson.M{"id": chartID, "diff": diff}
 	count, err := detailColl.CountDocuments(context.TODO(), filter)
 	if count == 0 {
