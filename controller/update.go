@@ -11,18 +11,25 @@ import (
 
 const (
 	officialURL      = "https://player.banground.fun/api/bestdori/official/info/%s/zh"
+	officialURL2     = "https://player.banground.fun/api/bestdori/official/info/%s/en"
 	officialChartURL = "https://bestdori.com/api/songs/chart/%s.%s.json"
 	fanChartURL      = "https://bestdori.com/api/post/details?id="
 )
 
 func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err error) {
-	if chartID <= 500 || chartID == 1000 || chartID == 1001 {
+	if chartID <= 1100 {
 		chart, err = getOfficialChart(chartID, diff)
+		if chart.Level == 0 {
+			chart, err = getFanMadeChart(chartID, diff)
+		}
 	} else {
 		chart, err = getFanMadeChart(chartID, diff)
 	}
 	if chart.Level == 0 {
-		return chart, detail, fmt.Errorf("Not A Chart!")
+		if err == nil {
+			err = fmt.Errorf("Not A Chart")
+		}
+		return chart, detail, err
 	}
 	if err != nil {
 		return chart, detail, err
@@ -45,7 +52,11 @@ func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 	// Request basic info of a particular chart
 	strID := strconv.Itoa(chartID)
 	strDiff := strconv.Itoa(diff)
-	raw, err := requestForJson(fmt.Sprintf(officialURL, strID))
+	basicURL := officialURL
+	if chartID >= 1000 {
+		basicURL = officialURL2
+	}
+	raw, err := requestForJson(fmt.Sprintf(basicURL, strID))
 	if err != nil {
 		return chart, err
 	}
@@ -60,10 +71,15 @@ func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 	}
 	var notes []model.Note
 	err = json.Unmarshal(raw, &notes)
+	var fanNotes []model.Note
+	fanNotes, err = model.BD2BDFan(notes)
+	if err != nil {
+		return chart, err
+	}
 
 	// generate a complete chart for return
 	chart = model.Chart{
-		Notes:    notes,
+		Notes:    fanNotes,
 		Level:    res.Data.Difficulty[strDiff].Level,
 		AuthorID: getAuthorID(),
 		Artist:   res.Data.Band,

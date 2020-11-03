@@ -1,5 +1,9 @@
 package model
 
+import (
+	"fmt"
+)
+
 type Chart struct {
 	ID       int    `bson:"id"`
 	Diff     int    `bson:"diff"`
@@ -36,7 +40,7 @@ type Detail struct {
 type OfficialBasic struct {
 	Result bool `json:"result"`
 	Data   struct {
-		Name       string `json:"string"`
+		Name       string `json:"name"`
 		Band       string `json:"band"`
 		Difficulty map[string]struct {
 			Level int `json:"level"`
@@ -75,4 +79,95 @@ type Note struct {
 	Flick  bool    `json:"flick" bson:"flick"`
 	Charge bool    `json:"charge" bson:"charge"`
 	Pos    string  `json:"pos" bson:"pos"`
+}
+
+func BD2BDFan(officialChart []Note) (fanChart []Note, err error) {
+	var leftOccupied, rightOccupied int
+	var endBeatLeft, endBeatRight float32
+	leftOccupied = 0
+	rightOccupied = 0
+	endBeatLeft = -1.0
+	endBeatRight = -1.0
+	for i := 0; i < len(officialChart); i++ {
+		note := &officialChart[i]
+		if note.Type == "System" && note.CMD == "BPM" {
+			note.Time = 0.0
+			fanChart = append(fanChart, *note)
+		} else if note.Type == "Note" {
+			note.Time = 0.0
+			if note.Note == "Long" {
+				note.Note = "Slide"
+				if note.Start {
+					if leftOccupied == 0 && note.Beat > endBeatLeft {
+						leftOccupied = note.Lane
+						note.Pos = "A"
+					} else if rightOccupied == 0 && note.Beat > endBeatRight {
+						rightOccupied = note.Lane
+						note.Pos = "B"
+					} else {
+						return fanChart, fmt.Errorf("Too many Slides")
+					}
+				} else if note.End {
+					if leftOccupied == note.Lane {
+						leftOccupied = 0
+						endBeatLeft = note.Beat
+						note.Pos = "A"
+					} else if rightOccupied == note.Lane {
+						rightOccupied = 0
+						endBeatRight = note.Beat
+						note.Pos = "B"
+					} else {
+						return fanChart, fmt.Errorf("Unexpected End Note")
+					}
+				} else {
+					return fanChart, fmt.Errorf("Not Such Tyoe Note")
+				}
+				fanChart = append(fanChart, *note)
+			} else if note.Note == "Slide" {
+				var notePos int
+				if note.Pos == "A" {
+					notePos = 10
+				} else {
+					notePos = 11
+				}
+				if note.Start {
+					if leftOccupied == 0 && note.Beat > endBeatLeft {
+						leftOccupied = notePos
+						note.Pos = "A"
+					} else if rightOccupied == 0 && note.Beat > endBeatRight {
+						rightOccupied = notePos
+						note.Pos = "B"
+					} else {
+						return fanChart, fmt.Errorf("Too many Slides")
+					}
+				} else if note.End {
+					if leftOccupied == notePos {
+						leftOccupied = 0
+						endBeatLeft = note.Beat
+						note.Pos = "A"
+					} else if rightOccupied == notePos {
+						rightOccupied = 0
+						endBeatRight = note.Beat
+						note.Pos = "B"
+					} else {
+						return fanChart, fmt.Errorf("Unexpect End Note")
+					}
+				} else {
+					if leftOccupied == notePos {
+						note.Pos = "A"
+					} else if rightOccupied == notePos {
+						note.Pos = "B"
+					} else {
+						return fanChart, fmt.Errorf("Unexpected Tick Note")
+					}
+				}
+				fanChart = append(fanChart, *note)
+			} else {
+				fanChart = append(fanChart, *note)
+			}
+		} else {
+			continue
+		}
+	}
+	return fanChart, nil
 }
