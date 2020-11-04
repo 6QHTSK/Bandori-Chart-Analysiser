@@ -64,6 +64,12 @@ type FanBasic struct {
 	} `json:"post"`
 }
 
+type Author struct {
+	AuthorID int    `bson:"authorID"`
+	UserName string `bson:"username"`
+	NickName string `bson:"nickname"`
+}
+
 type Note struct {
 	Type   string  `json:"type" bson:"type"`
 	CMD    string  `json:"cmd" bson:"cmd"`

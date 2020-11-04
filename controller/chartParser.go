@@ -45,6 +45,8 @@ func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 	res.TotalTime, res.TotalNote, res.TotalNPS, res.TotalHitNote, res.TotalHPS = CalcChartDetails(chart)
 	if res.TotalTime <= 20 {
 		res.Error = "20+ Seconds Required"
+		res.TotalNPS = 0
+		res.TotalHPS = 0
 		return res
 	}
 	if res.TotalNote <= 20 {

@@ -99,10 +99,12 @@ func getFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
 	}
 	var res model.FanBasic
 	err = json.Unmarshal(raw, &res)
+	var AuthorInfo model.Author
+	AuthorInfo, err = getAuthor(res.Post.Author.Username, res.Post.Author.Nickname)
 	chart = model.Chart{
 		Notes:    res.Post.Chart,
 		Level:    res.Post.Level,
-		AuthorID: 1, //getAuthorID(),
+		AuthorID: AuthorInfo.AuthorID,
 		Artist:   res.Post.Artist,
 		Title:    res.Post.Title,
 		ID:       chartID,
@@ -111,9 +113,14 @@ func getFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
 	return chart, nil
 }
 
-func getAuthorID() (ID int) {
-
-	return 0
+func getAuthor(username string, nickname string) (AuthorInfo model.Author, err error) {
+	var empty bool
+	AuthorInfo, empty = model.QueryAuthor(username)
+	if empty || AuthorInfo.NickName != nickname {
+		err = model.UpdateAuthor(username, nickname)
+		AuthorInfo, empty = model.QueryAuthor(username)
+	}
+	return AuthorInfo, err
 }
 
 // requestForJson accepts a url and returns raw bytes of json result
