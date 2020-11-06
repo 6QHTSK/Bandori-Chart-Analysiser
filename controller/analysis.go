@@ -58,6 +58,7 @@ func DiffAnalysis(ctx *gin.Context) {
 		"result": true,
 		"basic":  chart,
 		"detail": detail,
+		"diffs":  getDiff(detail),
 		"author": author,
 	}
 	ctx.JSON(http.StatusOK, result)

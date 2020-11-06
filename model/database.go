@@ -3,6 +3,7 @@ package model
 import (
 	"context"
 	"go.mongodb.org/mongo-driver/bson"
+	"reflect"
 	"time"
 
 	"go.mongodb.org/mongo-driver/mongo"
@@ -94,6 +95,64 @@ func QueryAuthorID(AuthorID int) (AuthorInfo Author, empty bool) {
 		return AuthorInfo, true
 	}
 	return res[0], false
+}
+
+func QueryRank(key string, value float32, diff int) (rank int) {
+	var filter bson.M
+	if diff >= 3 {
+		filter = bson.M{"diff": bson.M{"$gte": 3}, key: bson.M{"$gte": value}, "id": bson.M{"$lt": 500}}
+	} else {
+		filter = bson.M{"diff": diff, "authorID": 0, key: bson.M{"$gte": value}, "id": bson.M{"$lt": 500}}
+	}
+	rk, _ := detailColl.CountDocuments(context.TODO(), filter)
+	return int(rk)
+}
+
+func QueryDiffDistribution(diff int) (distribution map[int]int, base int, ceil int) {
+	var baseLevel = [5]int{5, 10, 15, 20, 20}
+	currentLevel := baseLevel[diff]
+	distribution = make(map[int]int)
+	for {
+		var filter bson.M
+		if diff >= 3 {
+			filter = bson.M{"level": bson.M{"$gte": currentLevel}, "diff": bson.M{"$gte": 3}, "id": bson.M{"$lt": 500}}
+		} else {
+			filter = bson.M{"level": bson.M{"$gte": currentLevel}, "diff": diff, "id": bson.M{"$lt": 500}}
+		}
+		count, _ := basicColl.CountDocuments(context.TODO(), filter)
+		if count == 0 {
+			break
+		}
+		distribution[currentLevel] = int(count)
+		currentLevel++
+	}
+	return distribution, baseLevel[diff], currentLevel - 1
+}
+
+func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32, b float32) {
+	var filter bson.M
+	if diff >= 3 {
+		filter = bson.M{"diff": bson.M{"$gte": 3}, "id": bson.M{"$lt": 500}}
+	} else {
+		filter = bson.M{"diff": diff, "authorID": 0, "id": bson.M{"$lt": 500}}
+	}
+	filterOption := options.Find()
+	filterOption.SetSort(bson.M{key: -1})
+	filterOption.SetProjection(bson.M{key: 1})
+	filterOption.SetLimit(int64(baseRank))
+	cur, _ := detailColl.Find(context.TODO(), filter, filterOption)
+	var res []Detail
+	_ = cur.All(context.TODO(), &res)
+	tempKey := []byte(key)
+	tempKey[0] -= 32
+	key = string(tempKey)
+	ceilReflect := reflect.ValueOf(res[0])
+	ceilReflectdata := ceilReflect.FieldByName(key)
+	ceil := float32(ceilReflectdata.Float())
+	base := float32(reflect.ValueOf(res[len(res)-1]).FieldByName(key).Float())
+	k = 1.2 / (ceil - base)
+	b = float32(ceilLevel-1) - k*base
+	return k, b
 }
 
 func UpdateBasic(chartID int, diff int, chart Chart) (err error) {
