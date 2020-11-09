@@ -13,7 +13,7 @@ func main() {
 		log.Println(err)
 	}
 	r := view.InitRouter()
-	err = r.Run("0.0.0.0:17555")
+	err = r.Run("0.0.0.0:20008")
 	if err != nil {
 		log.Println(err)
 	}

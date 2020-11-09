@@ -41,22 +41,21 @@ type Finger struct {
 func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 	res.ID = chartID
 	res.Diff = diff
-	chart, res.BPMLow, res.BPMHigh, res.MainBPM = calcTime(chart)
-	res.TotalTime, res.TotalNote, res.TotalNPS, res.TotalHitNote, res.TotalHPS = CalcChartDetails(chart)
+	chart, res.BPMLow, res.BPMHigh, res.MainBPM, res.TotalTime, res.TotalNote = calcTime(chart)
 	if res.TotalTime <= 20 {
 		res.Error = "20+ Seconds Required"
-		res.TotalNPS = 0
-		res.TotalHPS = 0
 		return res
 	}
 	if res.TotalNote <= 20 {
 		res.Error = "20+ Notes Required"
 		return res
 	}
+	res.TotalNPS, res.TotalHitNote, res.TotalHPS = CalcChartDetails(chart)
 	res.ActiveNPS, res.ActiveHPS, res.ActivePercent, res.MaxScreenNPS = activateDetails(chart)
 	finger1, finger2, err := play(chart)
 	if err != nil {
 		res.Error += err.Error() + "\n"
+		return res
 	}
 	res.LeftPercent, res.FingerMaxHPS, res.FlickNoteInterval, res.NoteFlickInterval, res.MaxSpeed, err = calcDetails(&finger1, &finger2)
 	if err != nil {
@@ -68,7 +67,7 @@ func getChartDetail(chartID int, diff int, chart []Note) (res model.Detail) {
 //计算bestdori格式的各个note的时间；
 //输入：bestdori格式的谱面；
 //返回值：含时间的纯净note列表，最低 bpm， 最高bpm
-func calcTime(chart []Note) ([]Note, float32, float32, float32) {
+func calcTime(chart []Note) ([]Note, float32, float32, float32, float32, int) {
 	var noteList []Note
 	var bpm, offsetTime, offsetBeat, BPMLow, BPMHigh, maxBPMTime, mainBPM float32
 	var bpmMap map[float32]float32
@@ -128,7 +127,7 @@ func calcTime(chart []Note) ([]Note, float32, float32, float32) {
 
 	}
 	//返回值：含时间的纯净note列表（以beat为顺序，相同时间以lane为顺序），最低 bpm， 最高bpm
-	return noteList, BPMLow, BPMHigh, mainBPM
+	return noteList, BPMLow, BPMHigh, mainBPM, noteList[len(noteList)-1].Time - noteList[0].Time + 0.1, len(noteList)
 }
 
 //计算在某个beat、某个time时，该手指的位置。
@@ -358,7 +357,7 @@ func isTrill(note1, note2, note3 *Note) bool {
 
 //计算这个绿条要用哪只手接，并标记
 //输入一个绿条开始键，无输出
-func slidePos(st int, chart *[]Note) {
+func slidePos(st int, chart *[]Note) (err error) {
 	tmp := Finger{defaultLane: 4}
 	end := tmp.appendSlide(st, *chart)
 	for i := st; i < len(*chart); i++ {
@@ -375,10 +374,11 @@ func slidePos(st int, chart *[]Note) {
 				(*chart)[st].finger = -3
 				break
 			} else {
-				log.Println("Slide and Note in same lane!")
+				return fmt.Errorf("Slide and Note in same lane!")
 			}
 		}
 	}
+	return nil
 }
 
 func play(chart []Note) (lHand, rHand Finger, err error) {
@@ -386,11 +386,15 @@ func play(chart []Note) (lHand, rHand Finger, err error) {
 	rHand = Finger{defaultLane: 6}
 	for i := 1; i < len(chart); i++ {
 		if chart[i-1].Note.Note == "Slide" && chart[i-1].Note.Start {
-			slidePos(i-1, &chart)
+			err := slidePos(i-1, &chart)
+			if err != nil {
+				return Finger{}, Finger{}, err
+			}
 		}
 		_, err := isDouble(&chart[i-1], &chart[i])
 		if err != nil {
 			log.Println(err.Error())
+			return Finger{}, Finger{}, err
 		}
 	}
 	for i := 2; i < len(chart); i++ {
@@ -407,16 +411,16 @@ func play(chart []Note) (lHand, rHand Finger, err error) {
 		}
 		if lAva && !rAva {
 			if float32(note.Lane) >= rPos {
-				return lHand, rHand, fmt.Errorf("Hand crossing!(Left -> Right)")
+				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right)")
 			}
 			lHand.appendNote(i, chart)
 		} else if !lAva && rAva {
 			if float32(note.Lane) <= lPos {
-				return lHand, rHand, fmt.Errorf("Hand crossing!(Left -> Right)")
+				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right)")
 			}
 			rHand.appendNote(i, chart)
 		} else if !lAva && !rAva {
-			return lHand, rHand, fmt.Errorf("No Hand available")
+			return Finger{}, Finger{}, fmt.Errorf("No Hand available")
 		} else {
 			if abs(note.finger).(int) > 0 {
 				if note.finger < 0 {
@@ -640,7 +644,7 @@ func activateDetails(chart []Note) (float32, float32, float32, float32) {
 	return activeData[0], activeData[1], maxActivePercent, maxScreenNPS
 }
 
-func CalcChartDetails(chart []Note) (float32, int, float32, int, float32) {
+func CalcChartDetails(chart []Note) (float32, int, float32) {
 	totalTime := chart[len(chart)-1].Time - chart[0].Time + 0.1
 	totalNote := len(chart)
 	totalNPS := float32(totalNote) / totalTime
@@ -651,7 +655,7 @@ func CalcChartDetails(chart []Note) (float32, int, float32, int, float32) {
 		}
 	}
 	totalHPS := float32(totalHitNote) / totalTime
-	return totalTime, totalNote, totalNPS, totalHitNote, totalHPS
+	return totalNPS, totalHitNote, totalHPS
 }
 
 //计算这些note中某些差值时间的平均值
@@ -689,4 +693,20 @@ func abs(x interface{}) interface{} {
 		}
 	}
 	return 0
+}
+
+func multipleSpeed(detail *model.Detail, Speed float32) {
+	detail.MainBPM = detail.MainBPM * Speed
+	detail.FlickNoteInterval = detail.FlickNoteInterval * Speed
+	detail.NoteFlickInterval = detail.NoteFlickInterval * Speed
+	detail.TotalTime = detail.TotalTime / Speed
+	detail.MaxScreenNPS = detail.MaxScreenNPS * Speed
+	detail.TotalHPS = detail.TotalHPS * Speed
+	detail.TotalNPS = detail.TotalNPS * Speed
+	detail.MaxSpeed = detail.MaxSpeed * Speed
+	detail.BPMHigh = detail.BPMHigh * Speed
+	detail.BPMLow = detail.BPMLow * Speed
+	detail.FingerMaxHPS = detail.FingerMaxHPS * Speed
+	detail.ActiveHPS = detail.ActiveHPS * Speed
+	detail.ActiveNPS = detail.ActiveNPS * Speed
 }

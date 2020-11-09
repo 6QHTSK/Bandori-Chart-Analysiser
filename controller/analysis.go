@@ -11,10 +11,15 @@ import (
 
 func DiffAnalysis(ctx *gin.Context) {
 	var chartID, diff int
-	var diffStr, StrID string
+	var diffStr, StrID, speedStr string
 	StrID = ctx.Query("id")
 	diffStr = ctx.Query("diff")
-	chartID, err := strconv.Atoi(StrID)
+	speedStr = ctx.Query("speed")
+	speed, err := strconv.ParseFloat(speedStr, 32)
+	if err != nil {
+		speed = 1.0
+	}
+	chartID, err = strconv.Atoi(StrID)
 	if err != nil {
 		fail(ctx, err)
 		return
@@ -54,6 +59,7 @@ func DiffAnalysis(ctx *gin.Context) {
 	}
 	chart.Notes = nil
 	author, _ := model.QueryAuthorID(chart.AuthorID)
+	multipleSpeed(&detail, float32(speed))
 	result := gin.H{
 		"result": true,
 		"basic":  chart,
@@ -66,7 +72,9 @@ func DiffAnalysis(ctx *gin.Context) {
 
 func DiffAnalysisPost(ctx *gin.Context) {
 	type inputChart struct {
-		Data []Note `json:"data"`
+		Data  []Note  `json:"data"`
+		Diff  int     `json:"diff"`
+		Speed float32 `json:"speed"`
 	}
 	chart := inputChart{}
 	err := ctx.BindJSON(&chart)
@@ -75,10 +83,12 @@ func DiffAnalysisPost(ctx *gin.Context) {
 		fail(ctx, err)
 		return
 	}
-	detail := getChartDetail(-1, -1, chart.Data)
+	detail := getChartDetail(-1, chart.Diff, chart.Data)
+	multipleSpeed(&detail, chart.Speed)
 	result := gin.H{
 		"result": true,
 		"detail": detail,
+		"diff":   getDiff(detail),
 	}
 	ctx.JSON(http.StatusOK, result)
 

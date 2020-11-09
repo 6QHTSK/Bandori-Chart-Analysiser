@@ -40,13 +40,11 @@ type Detail struct {
 type Diffs struct {
 	FingerMaxHPS      float32 `bson:"fingerMaxHPS"`
 	TotalNPS          float32 `bson:"totalNPS"`
-	MaxSpeed          float32 `bson:"maxSpeed"`
 	FlickNoteInterval float32 `bson:"flickNoteInterval"`
 	NoteFlickInterval float32 `bson:"noteFlickInterval"`
 	MaxScreenNPS      float32 `bson:"maxScreenNPS"`
 	TotalHPS          float32 `bson:"totalHPS"`
 	BlueWhiteFunc     float32 `bson:"blueWhiteFunc"`
-	TotalDiff         float32 `bson:"totalDiff"`
 }
 
 type OfficialBasic struct {

@@ -134,7 +134,7 @@ func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32
 	if diff >= 3 {
 		filter = bson.M{"diff": bson.M{"$gte": 3}, "id": bson.M{"$lt": 500}}
 	} else {
-		filter = bson.M{"diff": diff, "authorID": 0, "id": bson.M{"$lt": 500}}
+		filter = bson.M{"diff": diff, "id": bson.M{"$lt": 500}}
 	}
 	filterOption := options.Find()
 	filterOption.SetSort(bson.M{key: -1})
@@ -151,7 +151,7 @@ func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32
 	ceil := float32(ceilReflectdata.Float())
 	base := float32(reflect.ValueOf(res[len(res)-1]).FieldByName(key).Float())
 	k = 1.2 / (ceil - base)
-	b = float32(ceilLevel-1) - k*base
+	b = float32(ceilLevel) + 0.2 - k*ceil
 	return k, b
 }
 
