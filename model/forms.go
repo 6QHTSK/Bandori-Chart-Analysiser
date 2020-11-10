@@ -45,6 +45,7 @@ type Diffs struct {
 	MaxScreenNPS      float32 `bson:"maxScreenNPS"`
 	TotalHPS          float32 `bson:"totalHPS"`
 	BlueWhiteFunc     float32 `bson:"blueWhiteFunc"`
+	MaxSpeed          float32 `bson:"MaxSpeed"`
 }
 
 type OfficialBasic struct {

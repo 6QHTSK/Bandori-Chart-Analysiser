@@ -7,14 +7,15 @@ import (
 )
 
 func getDiff(detail model.Detail) (diff model.Diffs) {
-	var keys = [6]string{"fingerMaxHPS", "totalNPS", "flickNoteInterval", "noteFlickInterval", "maxScreenNPS", "totalHPS"}
-	var values = [6]float32{
+	var keys = []string{"fingerMaxHPS", "totalNPS", "flickNoteInterval", "noteFlickInterval", "maxScreenNPS", "totalHPS", "maxSpeed"}
+	var values = []float32{
 		detail.FingerMaxHPS,
 		detail.TotalNPS,
 		detail.FlickNoteInterval,
 		detail.NoteFlickInterval,
 		detail.MaxScreenNPS,
 		detail.TotalHPS,
+		detail.MaxSpeed,
 	}
 
 	diffDistribution, base, ceil := model.QueryDiffDistribution(detail.Diff)
@@ -38,6 +39,9 @@ func getDiff(detail model.Detail) (diff model.Diffs) {
 			if keys[i] == "flickNoteInterval" && rank != 1 {
 				diffMap["flickNoteInterval"] *= 0.97
 			}
+			if keys[i] == "maxSpeed" {
+				diffMap["maxSpeed"] *= 0.97
+			}
 		} else {
 			k, b := model.CalcDiffLiner(keys[i], detail.Diff, diffDistribution[ceil-1], ceil)
 			diffMap[keys[i]] = k*values[i] + b
@@ -54,6 +58,7 @@ func getDiff(detail model.Detail) (diff model.Diffs) {
 		NoteFlickInterval: diffMap["noteFlickInterval"],
 		MaxScreenNPS:      diffMap["maxScreenNPS"],
 		TotalHPS:          diffMap["totalHPS"],
+		MaxSpeed:          diffMap["maxSpeed"],
 		BlueWhiteFunc:     blueWhite,
 	}
 	return diff

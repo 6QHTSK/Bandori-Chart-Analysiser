@@ -53,7 +53,7 @@ def checksonglist(songlist):
             flag = True
             while flag:
                 try:
-                    diffres = requests.get(url="http://localhost:20008/DiffAnalysis?id=" + str(song["id"])).json()[
+                    diffres = requests.get(url="http://localhost:20008/DiffAnalysis?speed=-1.0&id=" + str(song["id"])).json()[
                         "detail"]
                     flag = False
                     print("Add song {}".format(song["id"]))
