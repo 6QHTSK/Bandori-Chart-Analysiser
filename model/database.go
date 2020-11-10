@@ -150,7 +150,7 @@ func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32
 	ceilReflectdata := ceilReflect.FieldByName(key)
 	ceil := float32(ceilReflectdata.Float())
 	base := float32(reflect.ValueOf(res[len(res)-1]).FieldByName(key).Float())
-	k = 1.2 / (ceil - base)
+	k = 1.2/(ceil-base) + 0.1
 	b = float32(ceilLevel) + 0.2 - k*ceil
 	return k, b
 }

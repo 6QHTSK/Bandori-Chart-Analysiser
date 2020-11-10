@@ -630,10 +630,12 @@ func activateDetails(chart []Note) (float32, float32, float32, float32) {
 		if i == 1 {
 			var sum float32
 			sum = 0.0
-			for _, x := range chartData[0:5] {
-				sum += x
+			if len(chartData) >= 5 {
+				for _, x := range chartData[0:5] {
+					sum += x
+				}
+				maxScreenNPS = sum / 5
 			}
-			maxScreenNPS = sum / 5
 		}
 	}
 	if activePercent[0] > activePercent[1] {

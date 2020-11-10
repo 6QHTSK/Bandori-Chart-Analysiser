@@ -59,12 +59,23 @@ func DiffAnalysis(ctx *gin.Context) {
 	}
 	chart.Notes = nil
 	author, _ := model.QueryAuthorID(chart.AuthorID)
+	if speed == -1.0 {
+		result := gin.H{
+			"result": true,
+			"basic":  chart,
+			"detail": detail,
+			//"diffs":  getDiff(detail),
+			"author": author,
+		}
+		ctx.JSON(http.StatusOK, result)
+		return
+	}
 	multipleSpeed(&detail, float32(speed))
 	result := gin.H{
 		"result": true,
 		"basic":  chart,
 		"detail": detail,
-		"diffs":  getDiff(detail),
+		//"diffs":  getDiff(detail),
 		"author": author,
 	}
 	ctx.JSON(http.StatusOK, result)
