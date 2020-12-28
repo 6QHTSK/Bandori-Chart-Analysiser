@@ -18,12 +18,12 @@ const (
 
 func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err error) {
 	if chartID <= 1100 {
-		chart, err = getOfficialChart(chartID, diff)
+		chart, err = GetOfficialChart(chartID, diff)
 		if chart.Level == 0 {
-			chart, err = getFanMadeChart(chartID, diff)
+			chart, err = GetFanMadeChart(chartID, diff)
 		}
 	} else {
-		chart, err = getFanMadeChart(chartID, diff)
+		chart, err = GetFanMadeChart(chartID, diff)
 	}
 	if chart.Level == 0 {
 		if err == nil {
@@ -48,7 +48,7 @@ func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err
 }
 
 // Get chart data from official website: player.banground.fun
-func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
+func GetOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 	// Request basic info of a particular chart
 	strID := strconv.Itoa(chartID)
 	strDiff := strconv.Itoa(diff)
@@ -91,7 +91,7 @@ func getOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 }
 
 // Get chart data from fan website: bestdori.reikohaku.fun
-func getFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
+func GetFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
 	strID := strconv.Itoa(chartID)
 	raw, err := requestForJson(fanChartURL + strID)
 	if err != nil {

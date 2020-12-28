@@ -191,27 +191,27 @@ func (finger *Finger) append(note Note) (status int, err error) {
 		if note.Note.Note == "Slide" {
 			if note.End {
 				if !finger.hold {
-					return 0, fmt.Errorf("Unexpected End Note!")
+					return 0, fmt.Errorf("Unexpected End Note at %.1f s", note.Time)
 				}
 				finger.hold = false
 				finger.pos = ""
 				return 2, nil
 			} else if note.Start {
 				if finger.hold {
-					return 0, fmt.Errorf("Unexpected Start Note!")
+					return 0, fmt.Errorf("Unexpected Start Note at %.1f s", note.Time)
 				}
 				finger.hold = true
 				finger.pos = note.Pos
 				return 3, nil
 			} else {
 				if !finger.hold {
-					return 4, fmt.Errorf("Unexpected Tick Note!")
+					return 4, fmt.Errorf("Unexpected Tick Note at %.1f s", note.Time)
 				}
 			}
 		}
 		return 1, nil
 	}
-	return 0, fmt.Errorf("unknown error")
+	return 0, fmt.Errorf("unknown error at %1.f second", note.Time)
 }
 
 func (finger *Finger) appendNote(index int, chart []Note) {
@@ -317,7 +317,7 @@ func isHitNote(args ...Note) bool {
 func isDouble(note1, note2 *Note) (bool, error) {
 	if note1.Beat == note2.Beat && isHitNote(*note1, *note2) {
 		if abs(note1.finger) == 2 || abs(note2.finger) == 2 {
-			return false, fmt.Errorf("Triple or more notes!")
+			return false, fmt.Errorf("Triple or more notes at %.1f s", note1.Time)
 		}
 		if note1.Lane < note2.Lane {
 			note1.finger = -2
@@ -326,7 +326,7 @@ func isDouble(note1, note2 *Note) (bool, error) {
 			note1.finger = 2
 			note2.finger = -2
 		} else {
-			return false, fmt.Errorf("Notes in the same lane!")
+			return false, fmt.Errorf("Notes in the same lane at %.1f s", note1.Time)
 		}
 		return true, nil
 	}
@@ -374,7 +374,7 @@ func slidePos(st int, chart *[]Note) (err error) {
 				(*chart)[st].finger = -3
 				break
 			} else {
-				return fmt.Errorf("Slide and Note in same lane!")
+				return fmt.Errorf("Slide and Note in same lane at %.1f s", note.Time)
 			}
 		}
 	}
@@ -411,16 +411,16 @@ func play(chart []Note) (lHand, rHand Finger, err error) {
 		}
 		if lAva && !rAva {
 			if float32(note.Lane) >= rPos {
-				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right)")
+				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right) at %1.f s", note.Time)
 			}
 			lHand.appendNote(i, chart)
 		} else if !lAva && rAva {
 			if float32(note.Lane) <= lPos {
-				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right)")
+				return Finger{}, Finger{}, fmt.Errorf("Hand crossing!(Left -> Right) at %1.f s", note.Time)
 			}
 			rHand.appendNote(i, chart)
 		} else if !lAva && !rAva {
-			return Finger{}, Finger{}, fmt.Errorf("No Hand available")
+			return Finger{}, Finger{}, fmt.Errorf("No Hand available at %1.f s", note.Time)
 		} else {
 			if abs(note.finger).(int) > 0 {
 				if note.finger < 0 {
@@ -453,7 +453,7 @@ func (finger *Finger) calcDelta() int {
 	(*noteList)[0].back = []float32{0, -1}
 	(*noteList)[len(*noteList)-1].front = []float32{0, -1}
 	for i := 0; i < len(*noteList)-1; i++ {
-		speed := abs(float32((*noteList)[i+1].Lane) - float32((*noteList)[i].Lane)/(*noteList)[i+1].Time).(float32)
+		speed := abs((float32((*noteList)[i+1].Lane) - float32((*noteList)[i].Lane)) / ((*noteList)[i+1].Time - (*noteList)[i].Time)).(float32)
 		deltaTime := (*noteList)[i+1].Time - (*noteList)[i].Time
 		if (*noteList)[i].Note.Note == "Slide" && (*noteList)[i].End {
 			deltaTime *= 1.5

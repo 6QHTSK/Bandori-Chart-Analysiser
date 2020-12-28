@@ -40,7 +40,6 @@ func DiffAnalysis(ctx *gin.Context) {
 
 	var detail model.Detail
 	var chart model.Chart
-
 	chart, empty := model.QueryChartBasic(chartID, diff)
 	if empty {
 		log.Println(fmt.Sprintf("chart (id-%d, diff-%d) not found, updating... ", chartID, diff))
@@ -129,21 +128,25 @@ func ChartNotes(ctx *gin.Context) {
 	}
 
 	var chart model.Chart
-
-	chart, empty := model.QueryChartBasic(chartID, diff)
-	if empty {
-		log.Println(fmt.Sprintf("chart (id-%d, diff-%d) not found, updating... ", chartID, diff))
-		chart, _, err = UpdateChart(chartID, diff)
-		if err != nil {
-			log.Println(err)
-			fail(ctx, err)
-			return
+	var status bool
+	chart, status = model.DownloadChart(chartID, diff)
+	if !status {
+		if chartID <= 1100 {
+			chart, err = GetOfficialChart(chartID, diff)
+			if chart.Level == 0 {
+				chart, err = GetFanMadeChart(chartID, diff)
+			}
+		} else {
+			chart, err = GetFanMadeChart(chartID, diff)
 		}
-		log.Println(fmt.Sprintf("chart (id-%d, diff-%d) updated successfully... ", chartID, diff))
+		if err == nil {
+			model.UploadChart(chart)
+		}
 	}
 	result := gin.H{
 		"result": true,
 		"data":   chart.Notes,
+		"err":    err,
 	}
 	ctx.JSON(http.StatusOK, result)
 }

@@ -16,9 +16,12 @@ func InitRouter() *gin.Engine {
 		mainGroup.GET("/DiffAnalysis", controller.DiffAnalysis)
 		mainGroup.POST("/DiffAnalysis", controller.DiffAnalysisPost)
 		mainGroup.GET("/ChartNotes", controller.ChartNotes)
-		mainGroup.StaticFile("/songList", "./songList.json")
+		mainGroup.GET("/songList", controller.SongList)
 		mainGroup.GET("/calcData", controller.CalcData)
 		mainGroup.GET("/calcAuthor", controller.CalcAuthor)
+		mainGroup.POST("/Sonolus/Script", controller.SonolusScriptPost)
+		mainGroup.POST("/Sonolus/Upload", controller.UploadSonolusTest)
+		mainGroup.GET("/Sonolus/list.json", controller.GetSonolusList)
 	}
 	return r
 }

@@ -1,8 +1,10 @@
 import sqlite3
 import time
-import math
 import json
 import datetime
+import fetch
+
+last_fetch_time = 0
 
 
 def return_bd_any():
@@ -160,3 +162,95 @@ def return_author(author):
     result["lastupdatechart"] = findauthor2(cur.fetchall(), author)
     con.close()
     return json.dumps(result)
+
+
+def return_search(searchString):
+    con = sqlite3.connect("songlist.db")
+    cur = con.cursor()
+    global last_fetch_time
+    if time.time() - last_fetch_time >= 10.0:
+        fetch.fetch_basically()
+        last_fetch_time = time.time()
+
+    def beautify(tur):
+        return {
+            "id": tur[0],
+            "title": tur[1],
+            "artists": tur[2],
+            "level": tur[3],
+            "diff": tur[4],
+            "username": tur[5],
+            "nickname": tur[6],
+            "cover": tur[7],
+            "bgm": tur[8]
+        }
+
+    def combination(parts):
+        res = []
+        length = len(parts)
+        counter = {}
+        tmp = {}
+        for part in parts:
+            for item in part:
+                if item[0] not in counter:
+                    tmp[item[0]] = item
+                    counter[item[0]] = 1
+                else:
+                    counter[item[0]] = counter[item[0]] + 1
+        for key, values in counter.items():
+            if values == length:
+                res.append(beautify(tmp[key]))
+        res.sort(key=lambda x: x["id"], reverse=True)
+        return res
+
+    def searchDiff(diff):
+        cur.execute("SELECT * from basicSonglist where diff = ?", (diff,))
+        return cur.fetchall()
+
+    def searchLevel(level):
+        cur.execute("SELECT * from basicSonglist where level = ?", (level,))
+        return cur.fetchall()
+
+    def searchID(ID):
+        cur.execute("SELECT * from basicSonglist where id = ?", (ID,))
+        return cur.fetchall()
+
+    def searchText(text):
+        sqlText = "%" + text + "%"
+        cur.execute(
+            "SELECT * from basicSonglist where LOWER(title) LIKE ? or LOWER(artists) LIKE ? or LOWER(username) LIKE ? or LOWER(nickname) LIKE ?",
+            (sqlText, sqlText, sqlText, sqlText))
+        return cur.fetchall()
+
+    def searchAll():
+        cur.execute(
+            "SELECT * from basicSonglist"
+        )
+        return cur.fetchall()
+
+    if searchString == "":
+        return {"result": combination((searchAll(),))}
+    searchStrings = searchString.split()
+    parts = []
+    diffstr = ["easy", "normal", "hard", "expert", "special", "ez", "nm", "hd", "ex", "sp"]
+    for string in searchStrings:
+        string = string.lower()
+        if string.isdigit():
+            num = int(string)
+            if num > 900:
+                parts.append(searchID(num))
+            elif 5 <= num <= 30:
+                parts.append(searchLevel(num))
+            elif 0 <= num <= 4:
+                parts.append(searchDiff(num))
+            else:
+                parts.append(searchText(string))
+        elif string in diffstr:
+            for i in range(0, 10):
+                if diffstr[i] == string:
+                    parts.append(searchDiff(i % 5))
+                    break
+        else:
+            parts.append(searchText(string))
+    con.close()
+    return {"result": combination(parts)}

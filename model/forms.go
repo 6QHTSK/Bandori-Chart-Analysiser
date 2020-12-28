@@ -82,20 +82,41 @@ type Author struct {
 }
 
 type Note struct {
-	Type   string  `json:"type" bson:"type"`
-	CMD    string  `json:"cmd" bson:"cmd"`
-	BPM    float32 `json:"bpm" bson:"bpm"`
-	Beat   float32 `json:"beat" bson:"beat"`
-	Effect string  `json:"effect" bson:"effect"`
-	Time   float32 `json:"time" bson:"time"`
-	Note   string  `json:"note" bson:"note"`
-	Lane   int     `json:"lane" bson:"lane"`
-	Skill  bool    `json:"skill" bson:"skill"`
-	Start  bool    `json:"start" bson:"start"`
-	End    bool    `json:"end" bson:"end"`
-	Flick  bool    `json:"flick" bson:"flick"`
-	Charge bool    `json:"charge" bson:"charge"`
-	Pos    string  `json:"pos" bson:"pos"`
+	Type  string  `json:"type" bson:"type"`
+	CMD   string  `json:"cmd" bson:"cmd"`
+	BPM   float32 `json:"bpm" bson:"bpm"`
+	Beat  float32 `json:"beat" bson:"beat"`
+	Time  float32 `json:"time" bson:"time"`
+	Note  string  `json:"note" bson:"note"`
+	Lane  int     `json:"lane" bson:"lane"`
+	Start bool    `json:"start" bson:"start"`
+	End   bool    `json:"end" bson:"end"`
+	Flick bool    `json:"flick" bson:"flick"`
+	Pos   string  `json:"pos" bson:"pos"`
+}
+
+type SonolusData struct {
+	Index  int       `json:"index"`
+	Values []float32 `json:"values"`
+}
+type SonolusEntity struct {
+	Archetype int         `json:"archetype"`
+	Data      SonolusData `json:"data"`
+}
+
+type SonolusDifficulty struct {
+	Name   string `json:"name"`
+	Rating string `json:"rating"`
+}
+type SonolusList struct {
+	ID           int               `json:"id"`
+	Title        string            `json:"title"`
+	Artists      string            `json:"artists"`
+	Author       string            `json:"author"`
+	Cover        string            `json:"cover"`
+	BGM          string            `json:"bgm"`
+	Difficulties SonolusDifficulty `json:"difficulties"`
+	Upload       int64             `json:"upload"`
 }
 
 func BD2BDFan(officialChart []Note) (fanChart []Note, err error) {

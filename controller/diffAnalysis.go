@@ -7,61 +7,52 @@ import (
 )
 
 func getDiff(detail model.Detail) (diff model.Diffs) {
-	var keys = []string{"fingerMaxHPS", "totalNPS", "flickNoteInterval", "noteFlickInterval", "maxScreenNPS", "totalHPS", "maxSpeed"}
-	var values = []float32{
-		detail.FingerMaxHPS,
-		detail.TotalNPS,
-		detail.FlickNoteInterval,
-		detail.NoteFlickInterval,
-		detail.MaxScreenNPS,
-		detail.TotalHPS,
-		detail.MaxSpeed,
-	}
-
-	diffDistribution, base, ceil := model.QueryDiffDistribution(detail.Diff)
-	var diffMap map[string]float32
-	diffMap = make(map[string]float32)
-	for i := 0; i < len(keys); i++ {
-		if values[i] == 0 {
-			diffMap[keys[i]] = 0.0
-			continue
-		}
-		rank := model.QueryRank(keys[i], values[i], detail.Diff)
-		if rank != 0 {
-			var j int
-			for j = base + 1; j <= ceil && diffDistribution[j] >= rank; j++ {
-			}
-			if j > ceil {
-				diffMap[keys[i]] = float32(ceil) + 0.2 - float32(rank-1)/float32(diffDistribution[ceil])
-			} else {
-				diffMap[keys[i]] = float32(j) - float32(diffDistribution[j-1]-rank)/float32(diffDistribution[j-1]-diffDistribution[j])
-			}
-			if keys[i] == "flickNoteInterval" && rank != 1 {
-				diffMap["flickNoteInterval"] *= 0.97
-			}
-			if keys[i] == "maxSpeed" {
-				diffMap["maxSpeed"] *= 0.97
-			}
-		} else {
-			k, b := model.CalcDiffLiner(keys[i], detail.Diff, diffDistribution[ceil-1], ceil)
-			diffMap[keys[i]] = k*values[i] + b
-		}
-	}
 	blueWhite := BlueWhiteFunc(detail)
 	if blueWhite < 0 || blueWhite >= 60 {
 		blueWhite = 0
 	}
 	diff = model.Diffs{
-		FingerMaxHPS:      diffMap["fingerMaxHPS"],
-		TotalNPS:          diffMap["totalNPS"],
-		FlickNoteInterval: diffMap["flickNoteInterval"],
-		NoteFlickInterval: diffMap["noteFlickInterval"],
-		MaxScreenNPS:      diffMap["maxScreenNPS"],
-		TotalHPS:          diffMap["totalHPS"],
-		MaxSpeed:          diffMap["maxSpeed"],
+		FingerMaxHPS:      CalcItemDiff("fingerMaxHPS", detail.FingerMaxHPS, detail.Diff),
+		TotalNPS:          CalcItemDiff("totalNPS", detail.TotalNPS, detail.Diff),
+		FlickNoteInterval: CalcItemDiff("flickNoteInterval", detail.FlickNoteInterval, detail.Diff),
+		NoteFlickInterval: CalcItemDiff("noteFlickInterval", detail.NoteFlickInterval, detail.Diff),
+		MaxScreenNPS:      CalcItemDiff("maxScreenNPS", detail.MaxScreenNPS, detail.Diff),
+		TotalHPS:          CalcItemDiff("totalHPS", detail.TotalHPS, detail.Diff),
+		MaxSpeed:          CalcItemDiff("maxSpeed", detail.TotalHPS, detail.Diff),
 		BlueWhiteFunc:     blueWhite,
 	}
 	return diff
+}
+
+func CalcItemDiff(key string, value float32, diff int) (itemDiff float32) {
+	if value == 0 {
+		return 0
+	}
+	diffDistribution, base, ceil := model.QueryDiffDistribution(diff)
+	rank := model.QueryRank(key, value, diff)
+	if rank != 0 {
+		var j int
+		for j = ceil; j >= base && diffDistribution[j] <= rank; j-- {
+			rank -= diffDistribution[j]
+		}
+		if j == ceil {
+			itemDiff = float32(ceil) + 0.2 - float32(rank-1)/float32(diffDistribution[ceil])
+		} else if j >= base {
+			itemDiff = float32(j) + float32(diffDistribution[j]-rank)/float32(diffDistribution[j])
+		} else {
+			itemDiff = float32(base)
+		}
+		if key == "flickNoteInterval" && rank != 1 {
+			itemDiff *= 0.97
+		}
+	} else {
+		if diff <= 2 {
+			return CalcItemDiff(key, value, diff+1)
+		}
+		k, b := model.CalcDiffLiner(key, diff, diffDistribution[ceil-1], ceil)
+		itemDiff = k*value + b
+	}
+	return itemDiff
 }
 
 func BlueWhiteFunc(detail model.Detail) (diff float32) {

@@ -3,36 +3,32 @@ package model
 import (
 	"context"
 	"go.mongodb.org/mongo-driver/bson"
-	"reflect"
-	"time"
-
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"log"
+	"reflect"
+	"time"
 )
 
 var client *mongo.Client
 var detailColl *mongo.Collection
 var basicColl *mongo.Collection
 var authorColl *mongo.Collection
+var SonolusListColl *mongo.Collection
 
 func InitDatabase() (err error) {
-	clientOptions := options.Client().ApplyURI("mongodb://127.0.0.1:27017")
-	client, err = mongo.NewClient(clientOptions)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI(
+		MongoURL,
+	))
 	if err != nil {
-		return err
-	}
-	ctx, _ := context.WithTimeout(context.Background(), 3*time.Second)
-	err = client.Connect(ctx)
-	if err != nil {
-		return err
-	}
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		return err
+		log.Fatal(err)
 	}
 	detailColl = client.Database("ayachan").Collection("detail")
 	basicColl = client.Database("ayachan").Collection("basic")
 	authorColl = client.Database("ayachan").Collection("author")
+	SonolusListColl = client.Database("ayachan").Collection("sonolus")
 	filter := bson.M{"authorID": 0}
 	cur, _ := authorColl.Find(context.TODO(), filter)
 	var res []Author
@@ -48,13 +44,25 @@ func InitDatabase() (err error) {
 
 func QueryChartBasic(chartID int, diff int) (chart Chart, empty bool) {
 	filter := bson.M{"id": chartID, "authorID": bson.M{"$ne": 0}}
-	cur, _ := basicColl.Find(context.TODO(), filter)
+	cur, err := basicColl.Find(context.TODO(), filter)
+	if err != nil {
+		return chart, false
+	}
 	var res []Chart
-	cur.All(context.TODO(), &res)
+	err = cur.All(context.TODO(), &res)
+	if err != nil {
+		return chart, false
+	}
 	if len(res) == 0 {
 		filter = bson.M{"id": chartID, "diff": diff, "authorID": 0}
-		cur, _ := basicColl.Find(context.TODO(), filter)
-		cur.All(context.TODO(), &res)
+		cur, err := basicColl.Find(context.TODO(), filter)
+		if err != nil {
+			return chart, false
+		}
+		err = cur.All(context.TODO(), &res)
+		if err != nil {
+			return chart, false
+		}
 		if len(res) == 0 {
 			return chart, true
 		}
@@ -102,31 +110,50 @@ func QueryRank(key string, value float32, diff int) (rank int) {
 	if diff >= 3 {
 		filter = bson.M{"diff": bson.M{"$gte": 3}, key: bson.M{"$gte": value}, "id": bson.M{"$lt": 500}}
 	} else {
-		filter = bson.M{"diff": diff, "authorID": 0, key: bson.M{"$gte": value}, "id": bson.M{"$lt": 500}}
+		filter = bson.M{"diff": diff, key: bson.M{"$gte": value}, "id": bson.M{"$lt": 500}}
 	}
 	rk, _ := detailColl.CountDocuments(context.TODO(), filter)
 	return int(rk)
 }
 
 func QueryDiffDistribution(diff int) (distribution map[int]int, base int, ceil int) {
-	var baseLevel = [5]int{5, 10, 15, 20, 20}
-	currentLevel := baseLevel[diff]
-	distribution = make(map[int]int)
-	for {
-		var filter bson.M
-		if diff >= 3 {
-			filter = bson.M{"level": bson.M{"$gte": currentLevel}, "diff": bson.M{"$gte": 3}, "id": bson.M{"$lt": 500}}
-		} else {
-			filter = bson.M{"level": bson.M{"$gte": currentLevel}, "diff": diff, "id": bson.M{"$lt": 500}}
-		}
-		count, _ := basicColl.CountDocuments(context.TODO(), filter)
-		if count == 0 {
-			break
-		}
-		distribution[currentLevel] = int(count)
-		currentLevel++
+	var filter bson.M
+	if diff >= 3 {
+		filter = bson.M{"diff": bson.M{"$gte": 3}, "id": bson.M{"$lt": 500}}
+	} else {
+		filter = bson.M{"diff": diff, "id": bson.M{"$lt": 500}}
 	}
-	return distribution, baseLevel[diff], currentLevel - 1
+	var res []Chart
+	findOption := options.Find()
+	findOption.SetProjection(bson.M{"level": 1})
+	cur, _ := basicColl.Find(context.TODO(), filter, findOption)
+	_ = cur.All(context.TODO(), &res)
+	distribution = make(map[int]int)
+	min := 50
+	max := 2
+	for _, item := range res {
+		distribution[item.Level]++
+		if item.Level > max {
+			max = item.Level
+		}
+		if item.Level < min {
+			min = item.Level
+		}
+
+	}
+	return distribution, min, max
+}
+
+func GetSonolusList() (list []SonolusList, err error) {
+	DeleteSonolusList()
+	cur, _ := SonolusListColl.Find(context.TODO(), bson.M{})
+	err = cur.All(context.TODO(), &list)
+	return list, err
+}
+
+func CheckSonolusList(id int) (flag bool) {
+	count, _ := SonolusListColl.CountDocuments(context.TODO(), bson.M{"id": id})
+	return count != 0
 }
 
 func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32, b float32) {
@@ -156,13 +183,18 @@ func CalcDiffLiner(key string, diff int, baseRank int, ceilLevel int) (k float32
 }
 
 func UpdateBasic(chartID int, diff int, chart Chart) (err error) {
+	tmp := chart.Notes
+	UploadChart(chart)
+	chart.Notes = nil
 	filter := bson.M{"id": chartID, "diff": diff}
 	count, err := basicColl.CountDocuments(context.TODO(), filter)
 	if count == 0 {
 		_, err := basicColl.InsertOne(context.TODO(), chart)
 		return err
+	} else {
+		_, err = basicColl.UpdateOne(context.TODO(), filter, bson.M{"$set": chart})
 	}
-	_, err = basicColl.UpdateOne(context.TODO(), filter, bson.M{"$set": chart})
+	chart.Notes = tmp
 	return err
 }
 
@@ -195,4 +227,15 @@ func UpdateAuthor(username string, nickname string) (err error) {
 	}
 	_, err = authorColl.UpdateOne(context.TODO(), filter, bson.M{"$set": bson.M{"nickname": nickname}})
 	return err
+}
+
+func UpdateSonolusList(listItem SonolusList) {
+	DeleteSonolusList()
+	listItem.Upload = time.Now().Unix()
+	_, _ = SonolusListColl.InsertOne(context.TODO(), listItem)
+}
+
+func DeleteSonolusList() {
+	filter := bson.M{"upload": bson.M{"$lte": time.Now().Add(-time.Minute).Unix()}}
+	_, _ = SonolusListColl.DeleteMany(context.TODO(), filter)
 }
