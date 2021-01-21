@@ -8,7 +8,7 @@ import (
 
 func getDiff(detail model.Detail) (diff model.Diffs) {
 	blueWhite := BlueWhiteFunc(detail)
-	if blueWhite < 0 || blueWhite >= 60 {
+	if detail.MaxScreenNPS == 0 || blueWhite < 0.0 || blueWhite >= 60.0 {
 		blueWhite = 0
 	}
 	diff = model.Diffs{
@@ -25,7 +25,7 @@ func getDiff(detail model.Detail) (diff model.Diffs) {
 }
 
 func CalcItemDiff(key string, value float32, diff int) (itemDiff float32) {
-	if value == 0 {
+	if value == 0.0 {
 		return 0
 	}
 	diffDistribution, base, ceil := model.QueryDiffDistribution(diff)
@@ -55,7 +55,7 @@ func CalcItemDiff(key string, value float32, diff int) (itemDiff float32) {
 	return itemDiff
 }
 
-func BlueWhiteFunc(detail model.Detail) (diff float32) {
+func BlueWhiteFuncOld(detail model.Detail) (diff float32) {
 	if detail.Diff >= 3 {
 		type pair struct {
 			Level int

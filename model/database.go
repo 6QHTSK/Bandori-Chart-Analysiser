@@ -236,6 +236,6 @@ func UpdateSonolusList(listItem SonolusList) {
 }
 
 func DeleteSonolusList() {
-	filter := bson.M{"upload": bson.M{"$lte": time.Now().Add(-time.Minute).Unix()}}
+	filter := bson.M{"upload": bson.M{"$lte": time.Now().Add(-time.Hour * 6).Unix()}}
 	_, _ = SonolusListColl.DeleteMany(context.TODO(), filter)
 }

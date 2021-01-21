@@ -116,20 +116,19 @@ func UploadSonolusTest(ctx *gin.Context) {
 		return
 	}
 	// 检查请求合法性：Recaptcha
-	if model.Debug != "debug" {
-		response := RecaptchaResponse{}
-		raw, err := requestForJson(fmt.Sprintf(reCaptchaServer, model.ReCaptchaKey, info.RecaptchaResponse))
-		if err != nil {
-			log.Println(err)
-			fail(ctx, err)
-			return
-		}
-		_ = json.Unmarshal(raw, &response)
-		if !response.Success {
-			fail(ctx, fmt.Errorf("Recaptcha Not Pass"))
-			return
-		}
+	response := RecaptchaResponse{}
+	raw, err := requestForJson(fmt.Sprintf(reCaptchaServer, model.ReCaptchaKey, info.RecaptchaResponse))
+	if err != nil {
+		log.Println(err)
+		fail(ctx, err)
+		return
 	}
+	_ = json.Unmarshal(raw, &response)
+	if !response.Success {
+		fail(ctx, fmt.Errorf("Recaptcha Not Pass"))
+		return
+	}
+
 	Script, err := BDFan2Sonolus(info.Notes) // 将发来的Bestdori Fanmade谱面转换为Sonolus脚本
 	if err != nil {
 		log.Println(err)
@@ -159,7 +158,10 @@ func UploadSonolusTest(ctx *gin.Context) {
 	}
 	model.UpdateSonolusList(listItem)
 	model.UploadSonolusChart(id, Script)
-	ctx.String(http.StatusOK, "")
+	ctx.JSON(http.StatusOK, gin.H{
+		"result": true,
+		"id":     id,
+	})
 }
 
 func GetSonolusList(ctx *gin.Context) {
@@ -170,5 +172,8 @@ func GetSonolusList(ctx *gin.Context) {
 		return
 	}
 	//listByte,_ := json.Marshal(list)
-	ctx.JSON(http.StatusOK, list)
+	ctx.JSON(http.StatusOK, gin.H{
+		"list":      list,
+		"pageCount": "1",
+	})
 }

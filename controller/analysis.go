@@ -134,10 +134,10 @@ func ChartNotes(ctx *gin.Context) {
 		if chartID <= 1100 {
 			chart, err = GetOfficialChart(chartID, diff)
 			if chart.Level == 0 {
-				chart, err = GetFanMadeChart(chartID, diff)
+				chart, err = GetFanMadeChart(chartID)
 			}
 		} else {
-			chart, err = GetFanMadeChart(chartID, diff)
+			chart, err = GetFanMadeChart(chartID)
 		}
 		if err == nil {
 			model.UploadChart(chart)

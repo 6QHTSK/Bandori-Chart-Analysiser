@@ -54,6 +54,8 @@ def checksonglist(songlist):
         for artist in sameartist:
             if song["artists"] == artist[0]:
                 song["artists"] = artist[1]
+        if song["id"] == 33302 or song["id"] == "33302":
+            continue
         if isinthelist(song["id"]):
             cur.execute(
                 "UPDATE songlist SET level = ?,diff = ?, likes = ?, new = ? , nickname = ? WHERE id = ?",
@@ -149,6 +151,8 @@ def isintheBasiclist(id):
 def checksonglistBasic(songlist):
     counter = 0
     for song in songlist:
+        if song["id"] == 33302 or song["id"] == "33302":
+            continue
         if isintheBasiclist(song["id"]):
             cur.execute(
                 "UPDATE basicSonglist SET level = ?,diff = ? WHERE id = ?",

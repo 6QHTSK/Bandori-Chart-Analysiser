@@ -35,7 +35,7 @@ func UploadString(name string, string []byte) (success bool) {
 }
 
 func UploadChart(chart Chart) (success bool) {
-	name := fmt.Sprintf("chart/%d.%s.json", chart.ID, diffStr[chart.Diff])
+	name := fmt.Sprintf("Chart/%d.%s.json", chart.ID, diffStr[chart.Diff])
 	chartStr, _ := json.Marshal(chart.Notes)
 	return UploadString(name, chartStr)
 }
@@ -46,7 +46,7 @@ func UploadSonolusChart(chartId int, SonolusScript []byte) (success bool) {
 }
 
 func DownloadChart(chartID int, diff int) (chart Chart, success bool) {
-	name := fmt.Sprintf("%d.%s.json", chartID, diffStr[diff])
+	name := fmt.Sprintf("Chart/%d.%s.json", chartID, diffStr[diff])
 	resp, err := cosClient.Object.Get(context.Background(), name, nil)
 	if cos.IsNotFoundError(err) {
 		return chart, false

@@ -10,7 +10,11 @@ func main() {
 	log.Println("Starting service...")
 	model.InitConfig()
 	model.InitTencentCos()
-	err := model.InitDatabase()
+	err := model.MinusTableReader()
+	if err != nil {
+		log.Println(err)
+	}
+	err = model.InitDatabase()
 	if err != nil {
 		log.Println(err)
 	}

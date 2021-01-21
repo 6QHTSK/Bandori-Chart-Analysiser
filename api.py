@@ -24,14 +24,14 @@ def search(searchString=""):
     page = flask.request.values.get("page")
     fetch.fetch_basically()
     list = bestdoriany.return_search(searchString)
-    pageCount = int((len(list) - 1) / 20) + 1
-    if page is None:
+    pageCount = int((len(list["result"]) - 1) / 20) + 1
+    if page is None or page == "":
         page = 0
     else:
         page = int(page)
     start = page * 20
-    end = min(len(list), start + 21)
-    res = {"pageCount": pageCount, "list": list[start:end]}
+    end = min(len(list["result"]), start + 20)
+    res = {"pageCount": pageCount, "list": list["result"][start:end]}
     return res
 
 

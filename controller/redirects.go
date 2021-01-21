@@ -21,3 +21,11 @@ func SongList(ctx *gin.Context) {
 	SongListUrl := fmt.Sprint(model.PythonAPI, "songList")
 	ctx.Redirect(http.StatusMovedPermanently, SongListUrl)
 }
+
+func BestdoriSearch(ctx *gin.Context) {
+	var page string
+	searchStr := ctx.Param("search")
+	page = ctx.Query("page")
+	BestdoriSearchUrl := fmt.Sprint(model.PythonAPI, "bestdoriSearch/", searchStr, "?page=", page)
+	ctx.Redirect(http.StatusMovedPermanently, BestdoriSearchUrl)
+}

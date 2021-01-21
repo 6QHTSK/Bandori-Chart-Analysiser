@@ -20,10 +20,10 @@ func UpdateChart(chartID, diff int) (chart model.Chart, detail model.Detail, err
 	if chartID <= 1100 {
 		chart, err = GetOfficialChart(chartID, diff)
 		if chart.Level == 0 {
-			chart, err = GetFanMadeChart(chartID, diff)
+			chart, err = GetFanMadeChart(chartID)
 		}
 	} else {
-		chart, err = GetFanMadeChart(chartID, diff)
+		chart, err = GetFanMadeChart(chartID)
 	}
 	if chart.Level == 0 {
 		if err == nil {
@@ -91,7 +91,7 @@ func GetOfficialChart(chartID, diff int) (chart model.Chart, err error) {
 }
 
 // Get chart data from fan website: bestdori.reikohaku.fun
-func GetFanMadeChart(chartID, diff int) (chart model.Chart, err error) {
+func GetFanMadeChart(chartID int) (chart model.Chart, err error) {
 	strID := strconv.Itoa(chartID)
 	raw, err := requestForJson(fanChartURL + strID)
 	if err != nil {
